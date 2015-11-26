@@ -941,9 +941,9 @@ angular.module("hmisPortal")
             cardObject.chartObject.yAxis.title.text = cardObject.title.toLowerCase();
 
             if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                $scope.url = "https://dhis.moh.go.tz/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
             }else{
-                $scope.url = "https://dhis.moh.go.tz/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
             }
             cardObject.chartObject.loading = true;
             $http.get($scope.url,{withCredentials: true, params : {
@@ -1034,7 +1034,7 @@ angular.module("hmisPortal")
         $scope.drawMap = function(parentUid,level,card){
             $scope.shared = shared;
             shared.facility =3029;
-            var url = 'https://dhis.moh.go.tz/api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
+            var url = 'http://139.162.204.124/dhis/api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
             card.chartObject.loading = true;
             $http.get(url,{withCredentials: true, params : {
                 j_username: "portal",
@@ -1188,7 +1188,7 @@ angular.module("hmisPortal")
                                 scope.selectedDistrict = feature ? $scope.districts[feature.getId()] : '';
                                 if(feature) {
                                     // looping throught indicator types
-                                    var url1 = "http://dhis.moh.go.tz/api/analytics.json?dimension=dx:"+card.data+"&dimension=pe:"+$scope.thisyear+"&filter=ou:"+feature.getId()+"&displayProperty=NAME";
+                                    var url1 = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+card.data+"&dimension=pe:"+$scope.thisyear+"&filter=ou:"+feature.getId()+"&displayProperty=NAME";
                                     $http.get(url1,{withCredentials: true, params : {
                                         j_username: "portal",
                                         j_password: "Portal123"
