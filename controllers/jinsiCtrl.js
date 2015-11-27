@@ -252,220 +252,110 @@ angular.module("hmisPortal")
             return num;
         }
 
-
+        $scope.defaultObject = {
+            title: {
+                text: 'Combination chart'
+            },
+            xAxis: {
+                categories: [],
+                    labels:{
+                    rotation: -70,
+                        style:{ "color": "#000000", "fontWeight": "normal" }
+                }
+            },
+            yAxis: {
+                min: 0,
+                    title: {
+                    text: ''
+                },labels:{
+                    style:{ "color": "#000000", "fontWeight": "bold" }
+                }
+            },
+            labels: {
+                items: [{
+                    html: 'doses',
+                    style: {
+                        left: '50px',
+                        top: '18px',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                    }
+                }]
+            },
+            series: []
+        }
 
         //
         $scope.cards.malaria = [
 
             {
+                title:'FACILITY BY TYPES AND OWNERSHIP',
+                description:'FACILITY BY TYPES AND OWNERSHIP',
+                cardClass:"col m12 s12",
+                data:'pNKhRlFZJbW;F7rOwHs03bE;eLBxCVGSC84;UXtq3G5o5iR;q9uFxOgNr5O;pocBJUp9dbX;mPK50J06lEV;Z0poM2BaIYt;M20Cu1g6VQm;Ahd4CO1qBtW;vDpgaeM5NLo;bcl3yz5Wa1T',
+                icons:angular.copy($scope.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy($scope.defaultObject)
+
+            },{
+                title:'Health Workers by cadre',
+                description:'Health Workers by cadre',
+                cardClass:"col m12 s12",
+                data:'nG4jLoeBLAN; UxnVJil2BwF;NOk7PCAF174;fdX6lREQQp0;lJNzLghsdKg;BwXD0MzkvLG;oRbPiu3t4oc',
+                icons:angular.copy($scope.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy($scope.defaultObject)
+
+            },{
                 title:'RCH DATA COMPLETENESS',
                 description:'RCH DATA COMPLETENESS',
                 cardClass:"col m12 s12",
                 cardSize:"medium",
                 data:'GzvLb3XVZbR;TfoI3vTGv1f;cap79mdf6Co;rm3y3VHPiFD;QntdhuQfgvT;zeEp4Xu2GOm',
-                icons:[
-                    {name:'table',image:'table.jpg',action:''},
-                    {name:'bar',image:'bar.png',action:''},
-                    {name:'line',image:'line.png',action:''},
-                    {name:'combined',image:'combined.jpg',action:''},
-                    {name:'column',image:'column.png',action:''},
-                    {name:'area',image:'area.jpg',action:''},
-                    {name:'pie',image:'pie.png',action:''}
-                ],
-                dataSource:'dhis',
-                size:'small',
+                icons:angular.copy($scope.icons),
                 displayTable:false,
                 displayMap:false,
                 chart:'bar',
-                chartObject:{
-                    title: {
-                        text: 'Combination chart'
-                    },
-                    xAxis: {
-                        categories: [],
-                        labels:{
-                            rotation: -70,
-                            style:{ "color": "#000000", "fontWeight": "normal" }
-                        }
-                    },
-                    yAxis: {
-                        min: 0,
-                        title: {
-                            text: ''
-                        },labels:{
-                            style:{ "color": "#000000", "fontWeight": "bold" }
-                        }
-                    },
-                    labels: {
-                        items: [{
-                            html: 'doses',
-                            style: {
-                                left: '50px',
-                                top: '18px',
-                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                            }
-                        }]
-                    },
-                    series: []
-                }
+                chartObject:angular.copy($scope.defaultObject)
 
             },
             {
                 title:'HMIS DATA COMPLETENESS',
                 description:'HMIS DATA COMPLETENESS',
                 cardClass:"col m12 s12",
-                cardSize:"medium",
                 data:'ZOvFj2vtlor;qpcwPcj8D6u;v6wdME3ouXu',
-                icons:[
-                    {name:'table',image:'table.jpg',action:''},
-                    {name:'bar',image:'bar.png',action:''},
-                    {name:'line',image:'line.png',action:''},
-                    {name:'combined',image:'combined.jpg',action:''},
-                    {name:'column',image:'column.png',action:''},
-                    {name:'area',image:'area.jpg',action:''},
-                    {name:'pie',image:'pie.png',action:''}
-                ],
-                dataSource:'dhis',
-                size:'small',
+                icons:angular.copy($scope.icons),
                 displayTable:false,
                 displayMap:false,
                 chart:'bar',
-                chartObject:{
-                    title: {
-                        text: 'Combination chart'
-                    },
-                    xAxis: {
-                        categories: [],
-                        labels:{
-                            rotation: -70,
-                            style:{ "color": "#000000", "fontWeight": "normal" }
-                        }
-                    },
-                    yAxis: {
-                        min: 0,
-                        title: {
-                            text: ''
-                        },labels:{
-                            style:{ "color": "#000000", "fontWeight": "bold" }
-                        }
-                    },
-                    labels: {
-                        items: [{
-                            html: 'doses',
-                            style: {
-                                left: '50px',
-                                top: '18px',
-                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                            }
-                        }]
-                    },
-                    series: []
-                }
+                chartObject:angular.copy($scope.defaultObject)
 
             },
             {
-            title:'NACP DATA COMPLETENESS',
-            description:'NACP DATA COMPLETENESS',
-            cardClass:"col s12 m12",
-            data:'Hwcn7ajwZ1p;Dp0VF7ssmcH;CxaDPrjhmax;db4lfMnttc6',
-            icons:[
-                {name:'table',image:'table.jpg',action:''},
-                {name:'bar',image:'bar.png',action:''},
-                {name:'line',image:'line.png',action:''},
-                {name:'combined',image:'combined.jpg',action:''},
-                {name:'column',image:'column.png',action:''},
-                {name:'area',image:'area.jpg',action:''},
-                {name:'pie',image:'pie.png',action:''}
-            ],
-            dataSource:'dhis',
-            size:'small',
-            displayTable:false,
-            displayMap:false,
-            chart:'bar',
-            chartObject:{
-                title: {
-                    text: 'HIV DATA'
-                },
-                xAxis: {
-                    categories: [],
-                    labels:{
-                        rotation: -70,
-                        style:{ "color": "#000000", "fontWeight": "normal" }
-                    }
-                },
-                yAxis: {
-                    min: 0,
-                    title: {
-                        text: ''
-                    },labels:{
-                        style:{ "color": "#000000", "fontWeight": "bold" }
-                    }
-                },
-                labels: {
-                    items: [{
-                        html: 'HIV DATA',
-                        style: {
-                            left: '50px',
-                            top: '18px',
-                            color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                        }
-                    }]
-                },
-                series: []
-            }
+                title:'NACP DATA COMPLETENESS',
+                description:'NACP DATA COMPLETENESS',
+                cardClass:"col s12 m12",
+                data:'Hwcn7ajwZ1p;Dp0VF7ssmcH;CxaDPrjhmax;db4lfMnttc6',
+                icons:angular.copy($scope.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy($scope.defaultObject)
 
-        },
+            },
             {
                 title:'NTLP DATA COMPLETENESS',
                 description:'NTLP DATA COMPLETENESS',
                 cardClass:"col m12 s12",
-                cardSize:"medium",
                 data:'UHDfKY2mUOQ;ykDbDeDvTcx;ZOkoQ7BtbVQ;IzUZXETYoyB',
-                icons:[
-                    {name:'table',image:'table.jpg',action:''},
-                    {name:'bar',image:'bar.png',action:''},
-                    {name:'line',image:'line.png',action:''},
-                    {name:'combined',image:'combined.jpg',action:''},
-                    {name:'column',image:'column.png',action:''},
-                    {name:'area',image:'area.jpg',action:''},
-                    {name:'pie',image:'pie.png',action:''}
-                ],
-                dataSource:'etl',
-                size:'small',
+                icons:angular.copy($scope.icons),
                 displayTable:false,
                 displayMap:false,
                 chart:'bar',
-                chartObject:{
-                    title: {
-                        text: 'Combination chart'
-                    },
-                    xAxis: {
-                        categories: [],
-                        labels:{
-                            rotation: -70,
-                            style:{ "color": "#000000", "fontWeight": "normal" }
-                        }
-                    },
-                    yAxis: {
-                        min: 0,
-                        title: {
-                            text: ''
-                        },labels:{
-                            style:{ "color": "#000000", "fontWeight": "bold" }
-                        }
-                    },
-                    labels: {
-                        items: [{
-                            html: 'doses',
-                            style: {
-                                left: '50px',
-                                top: '18px',
-                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                            }
-                        }]
-                    },
-                    series: []
-                }
+                chartObject:angular.copy($scope.defaultObject)
 
             }
         ];
