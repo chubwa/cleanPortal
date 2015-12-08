@@ -405,10 +405,7 @@ angular.module("hmisPortal")
                     url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
                 }
 
-                $http.get(url,{withCredentials: true, params : {
-                    j_username: "portal",
-                    j_password: "Portal123"
-                },'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
+                $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
                     var a = document.createElement('a');
                     var blob = new Blob([data]);
                     a.href = window.URL.createObjectURL(blob);

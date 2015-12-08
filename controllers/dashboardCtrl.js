@@ -98,6 +98,29 @@ angular.module("hmisPortal")
                 });
             });
         };
+        $scope.downloadPopulationExcel = function(card){
+            var base = "http://139.162.204.124/dhis/";
+            $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
+                j_username: "portal", j_password: "Portal123"
+            },function(){
+                var url = "";
+
+                if($scope.selectedOrgUnit == "m0frOspS7JY"){
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-1;LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
+                }else{
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
+                }
+
+                $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
+                    var a = document.createElement('a');
+                    var blob = new Blob([data]);
+                    a.href = window.URL.createObjectURL(blob);
+                    a.download = "data.csv";
+                    a.click();
+                });
+            })
+
+        };
 
         $scope.prepareSeries = function(){
             $scope.chartConfig.loading = true;
