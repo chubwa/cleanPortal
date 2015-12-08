@@ -313,7 +313,7 @@ angular.module("hmisPortal")
                 title:'Health Workers by cadre',
                 description:'Health Workers by cadre',
                 cardClass:"col m12 s12",
-                data:'nG4jLoeBLAN; UxnVJil2BwF;NOk7PCAF174;fdX6lREQQp0;lJNzLghsdKg;BwXD0MzkvLG;oRbPiu3t4oc',
+                data:'nG4jLoeBLAN;UxnVJil2BwF;NOk7PCAF174;fdX6lREQQp0;lJNzLghsdKg;BwXD0MzkvLG;oRbPiu3t4oc',
                 icons:angular.copy($scope.icons),
                 displayTable:false,
                 displayMap:false,

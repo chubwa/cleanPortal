@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed684a7-0037-4544-a5ee-17e8d170167b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/jinsiCtrl.js" afterPath="$PROJECT_DIR$/controllers/jinsiCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,17 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jinsiCtrl.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="304" column="57" selection-start="13712" selection-end="13712" vertical-scroll-proportion="0.3286517" vertical-offset="1782" max-vertical-offset="18234">
-              <folding>
-                <element signature="e#2015#2624#0" expanded="false" />
-                <element signature="e#2673#4168#0" expanded="false" />
-                <element signature="e#4217#10493#0" expanded="false" />
-                <element signature="e#10561#11689#0" expanded="false" />
-                <element signature="e#11744#11963#0" expanded="false" />
-              </folding>
+            <state line="55" column="49" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.4481752" vertical-offset="683" max-vertical-offset="3096">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,6 +132,7 @@
       <list>
         <option value="$PROJECT_DIR$/views/dashboard.html" />
         <option value="$PROJECT_DIR$/controllers/jinsiCtrl.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -551,7 +547,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="57" selection-start="13712" selection-end="13712" vertical-scroll-proportion="0.3286517" vertical-offset="1782" max-vertical-offset="18234">
+        <state line="315" column="34" selection-start="14123" selection-end="14123" vertical-scroll-proportion="1.0617977" vertical-offset="1458" max-vertical-offset="18234">
           <folding>
             <element signature="e#2015#2624#0" expanded="false" />
             <element signature="e#2673#4168#0" expanded="false" />
@@ -559,6 +555,13 @@
             <element signature="e#10561#11689#0" expanded="false" />
             <element signature="e#11744#11963#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="49" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.4481752" vertical-offset="683" max-vertical-offset="3096">
+          <folding />
         </state>
       </provider>
     </entry>
