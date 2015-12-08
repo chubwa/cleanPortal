@@ -7,11 +7,13 @@ angular.module("hmisPortal")
         $httpProvider.defaults.withCredentials = true;
         $httpProvider.defaults.headers.post["Content-Type"] = "application/json";
      })
-    .controller("mainCtrl",function ($rootScope,$scope,$http,$location,$timeout,olData,olHelpers,shared) {
+    .controller("morbidityCtrl",function ($rootScope,$scope,$http,$location,$timeout,olData,olHelpers,shared) {
         $scope.userGroupID='tthud5BXCSD';
+        $rootScope.periodType = 'years';
         var userGroups =[];
         var dataTextToSend={};
 
+        $rootScope.periodType = 'years';
         var messageUrl='http://139.162.204.124/dhis/api/messageConversations';
         $scope.sendMessage=function(subject,text){
             userGroups.length=0;

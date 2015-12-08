@@ -13,6 +13,7 @@ angular.module("hmisPortal")
             $scope.linkValue = linkValue;
 
         }
+        $rootScope.periodType = 'years';
          //displaying loading during page change
         $rootScope.$on("$routeChangeStart",
             function (event, current, previous, rejection) {

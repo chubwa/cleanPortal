@@ -46,7 +46,7 @@ angular.module("hmisPortal")
 
         $routeProvider.when("/morbidity",{
             templateUrl: 'views/morbidity.html',
-            controller: 'mainCtrl'
+            controller: 'morbidityCtrl'
         });
 
         $routeProvider.when("/mortality",{

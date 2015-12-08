@@ -18,6 +18,7 @@ angular.module("hmisPortal")
             });
         $scope.cards = {};
         $scope.data = {};
+        $rootScope.periodType = 'years';
         portalService.orgUnitId = "m0frOspS7JY";
         portalService.period = "2014";
         $scope.selectedOrgUnitLevel = "2";

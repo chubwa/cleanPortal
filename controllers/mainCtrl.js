@@ -19,8 +19,39 @@ angular.module("hmisPortal")
 
             });
 
+        $rootScope.changePeriodType = function(){
+
+        };
+
+        $scope.userGroupID='tthud5BXCSD';
+        $rootScope.periodType = 'years';
+        var userGroups =[];
+        var dataTextToSend={};
+
+        var messageUrl='http://139.162.204.124/dhis/api/messageConversations';
+        $scope.sendMessage=function(subject,text){
+            userGroups.length=0;
+            userGroups.push({'id':$scope.userGroupID});
+            dataTextToSend['subject']=subject;
+            dataTextToSend['text']=text;
+            dataTextToSend['userGroups']=userGroups;
+            console.log(dataTextToSend);
+            $http({
+                method: 'POST',
+                url: messageUrl,
+                data: dataTextToSend
+            }).then(function(response) {
+                    console.log(dataTextToSend);
+                    // success
+                },
+                function(response) { // optional
+                    // failed
+                });
+
+        }
         $scope.cards = {};
         $scope.data = {};
+        $rootScope.periodType = 'years';
         $rootScope.selectedOrgUnit = "m0frOspS7JY";
         $rootScope.selectedPeriod = "2014";
         $scope.selectedOrgUnitLevel = "2";

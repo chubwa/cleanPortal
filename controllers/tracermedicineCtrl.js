@@ -26,6 +26,7 @@ angular.module("hmisPortal")
         $rootScope.selectedOrgUnit = "m0frOspS7JY";
         $rootScope.selectedPeriod = "2014";
         $scope.selectedOrgUnitLevel = "2";
+        $rootScope.periodType = 'years';
         $scope.chartConfig = {
             title: {
                 text: 'Combination chart'
