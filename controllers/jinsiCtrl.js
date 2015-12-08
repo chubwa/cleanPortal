@@ -299,6 +299,17 @@ angular.module("hmisPortal")
                 chartObject:angular.copy($scope.defaultObject)
 
             },{
+                title:'FACILITY BY TYPES',
+                description:'FACILITY BY TYPES',
+                cardClass:"col m12 s12",
+                data:'aUbvjFGx8Vb;Jnox7JzzkIq;JrSskW3T4tL',
+                icons:angular.copy($scope.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy($scope.defaultObject)
+
+            },{
                 title:'Health Workers by cadre',
                 description:'Health Workers by cadre',
                 cardClass:"col m12 s12",
