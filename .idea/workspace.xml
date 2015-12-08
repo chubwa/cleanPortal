@@ -100,7 +100,7 @@
       <file leaf-file-name="portalService.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/portalService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="49" selection-start="346" selection-end="346" vertical-scroll-proportion="0.30337077" vertical-offset="0" max-vertical-offset="3690">
+            <state line="88" column="56" selection-start="3345" selection-end="3345" vertical-scroll-proportion="-0.3539326" vertical-offset="1836" max-vertical-offset="3690">
               <folding />
             </state>
           </provider>
@@ -599,7 +599,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/portalService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="49" selection-start="346" selection-end="346" vertical-scroll-proportion="0.30337077" vertical-offset="0" max-vertical-offset="3690">
+        <state line="88" column="56" selection-start="3345" selection-end="3345" vertical-scroll-proportion="-0.3539326" vertical-offset="1836" max-vertical-offset="3690">
           <folding />
         </state>
       </provider>

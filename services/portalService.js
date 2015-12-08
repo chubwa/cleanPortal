@@ -86,7 +86,7 @@ angular.module("hmisPortal")
             self.authenticateDHIS().then(function(){
                 var url = "";
                 if(self.selectedOrgUnit == "m0frOspS7JY"){
-                    url = "https://dhis.moh.go.tz/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+self.period+"&dimension=ou:LEVEL-1;LEVEL-2;"+self.orgUnitId+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                    url = "https://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+self.period+"&dimension=ou:LEVEL-1;LEVEL-2;"+self.orgUnitId+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }else{
                     url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+self.period+"&dimension=ou:LEVEL-2;LEVEL-3;"+self.orgUnitId+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }
