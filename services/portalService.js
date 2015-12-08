@@ -10,7 +10,7 @@ angular.module("hmisPortal")
         this.period = '';
         this.orgUnitId = '';
         this.orgUnitName = '';
-        this.base = "http://139.162.204.124/dhis";
+        this.base = "http://139.162.204.124/dhis/";
         this.icons = [
             {name:'table',image:'table.jpg',action:''},
             {name:'bar',image:'bar.png',action:''},

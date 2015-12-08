@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed684a7-0037-4544-a5ee-17e8d170167b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard.html" afterPath="$PROJECT_DIR$/views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/dashboardCtrl.js" afterPath="$PROJECT_DIR$/controllers/dashboardCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/jinsiCtrl.js" afterPath="$PROJECT_DIR$/controllers/jinsiCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/portalService.js" afterPath="$PROJECT_DIR$/services/portalService.js" />
     </list>
     <ignored path="cleanPortal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="72" selection-start="5459" selection-end="5459" vertical-scroll-proportion="0.2642336" vertical-offset="1097" max-vertical-offset="4014">
+            <state line="130" column="54" selection-start="9724" selection-end="9735" vertical-scroll-proportion="-5.4074073" vertical-offset="2194" max-vertical-offset="4014">
               <folding />
             </state>
           </provider>
@@ -58,7 +55,7 @@
       <file leaf-file-name="dashboardCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="38" selection-start="4424" selection-end="4447" vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="9936">
+            <state line="87" column="119" selection-start="3441" selection-end="3452" vertical-scroll-proportion="-5.766667" vertical-offset="1393" max-vertical-offset="9936">
               <folding />
             </state>
           </provider>
@@ -100,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portalService.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="portalService.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/portalService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690">
+            <state line="12" column="49" selection-start="346" selection-end="346" vertical-scroll-proportion="0.30337077" vertical-offset="0" max-vertical-offset="3690">
               <folding />
             </state>
           </provider>
@@ -135,6 +132,7 @@
         <option value="$PROJECT_DIR$/controllers/dashboardCtrl.js" />
         <option value="$PROJECT_DIR$/controllers/jinsiCtrl.js" />
         <option value="$PROJECT_DIR$/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/services/portalService.js" />
       </list>
     </option>
   </component>
@@ -204,6 +202,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cleanPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cleanPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/portalService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/maternalCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="31" selection-start="1082" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="13680">
@@ -578,16 +583,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
+    <entry file="file://$PROJECT_DIR$/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="38" selection-start="4424" selection-end="4447" vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="9936">
+        <state line="130" column="54" selection-start="9724" selection-end="9735" vertical-scroll-proportion="-5.4074073" vertical-offset="2194" max-vertical-offset="4014">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="72" selection-start="5459" selection-end="5459" vertical-scroll-proportion="0.2642336" vertical-offset="1097" max-vertical-offset="4014">
+        <state line="87" column="119" selection-start="3441" selection-end="3452" vertical-scroll-proportion="-5.766667" vertical-offset="1393" max-vertical-offset="9936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/portalService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="49" selection-start="346" selection-end="346" vertical-scroll-proportion="0.30337077" vertical-offset="0" max-vertical-offset="3690">
           <folding />
         </state>
       </provider>
