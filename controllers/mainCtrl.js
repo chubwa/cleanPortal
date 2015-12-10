@@ -6,7 +6,7 @@ angular.module("hmisPortal")
     .run(function() {
 
     })
-    .controller("mainCtrl",function ($rootScope,$scope,$q) {
+    .controller("mainCtrl",function ($rootScope,$scope,$q,$http) {
 
         $rootScope.showLoader = false;
         $rootScope.$on("$routeChangeStart",
