@@ -23,7 +23,7 @@ angular.module("hmisPortal")
 
         };
 
-        $scope.userGroupID='tthud5BXCSD';
+        $scope.userGroupID='TzdTxMEbt1W';
         $rootScope.periodType = 'years';
         var userGroups =[];
         var dataTextToSend={};
