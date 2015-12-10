@@ -29,11 +29,11 @@ angular.module("hmisPortal")
         var dataTextToSend={};
 
         var messageUrl='http://139.162.204.124/dhis/api/messageConversations';
-        $scope.sendMessage=function(subject,text){
+        $scope.sendMessage=function(subject,text,email,phoneNo){
             userGroups.length=0;
             userGroups.push({'id':$scope.userGroupID});
             dataTextToSend['subject']=subject;
-            dataTextToSend['text']=text;
+            dataTextToSend['text']=text+" Contacts Details: Email " +email+"  and Phone number " +phoneNo;
             dataTextToSend['userGroups']=userGroups;
             console.log(dataTextToSend);
             $http({
@@ -42,13 +42,11 @@ angular.module("hmisPortal")
                 data: dataTextToSend
             }).then(function(response) {
                     console.log(dataTextToSend);
-                    // success
                 },
                 function(response) { // optional
-                    // failed
                 });
 
-        }
+        };
         $scope.cards = {};
         $scope.data = {};
         $rootScope.periodType = 'years';

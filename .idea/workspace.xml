@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed684a7-0037-4544-a5ee-17e8d170167b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/ivd.html" afterPath="$PROJECT_DIR$/views/ivd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/malaria.html" afterPath="$PROJECT_DIR$/views/malaria.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/maternal.html" afterPath="$PROJECT_DIR$/views/maternal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/morbidity.html" afterPath="$PROJECT_DIR$/views/morbidity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/mortality.html" afterPath="$PROJECT_DIR$/views/mortality.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/nutrition.html" afterPath="$PROJECT_DIR$/views/nutrition.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/tracer_medicine.html" afterPath="$PROJECT_DIR$/views/tracer_medicine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/mainCtrl.js" afterPath="$PROJECT_DIR$/controllers/mainCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cleanPortal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +27,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="jinsiCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="245" column="29" selection-start="11747" selection-end="11761" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="18198">
+              <folding>
+                <element signature="e#2056#2665#0" expanded="false" />
+                <element signature="e#2714#4209#0" expanded="false" />
+                <element signature="e#4258#10534#0" expanded="false" />
+                <element signature="e#10602#11730#0" expanded="false" />
+                <element signature="e#11785#12004#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/mainCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="10" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2070">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="128" column="32" selection-start="6770" selection-end="6770" vertical-scroll-proportion="0.31532848" vertical-offset="1404" max-vertical-offset="2646">
+              <folding>
+                <element signature="tag#form#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="downloads.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/downloads.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="882">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
               <folding />
             </state>
           </provider>
@@ -43,7 +74,7 @@
       <file leaf-file-name="hiv.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/hiv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
               <folding />
             </state>
           </provider>
@@ -52,56 +83,8 @@
       <file leaf-file-name="malaria.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/malaria.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="23" selection-end="7792" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="2106">
-              <folding>
-                <element signature="tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="tag#div#1;tag#div#0" expanded="false" />
-                <element signature="tag#script#0;tag#div#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maternal.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/maternal.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-24.037037" vertical-offset="1115" max-vertical-offset="4086">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="morbidity.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/morbidity.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-65.333336" vertical-offset="0" max-vertical-offset="4086">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="1" column="4" selection-start="23" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="3780">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,12 +92,8 @@
       <file leaf-file-name="mortality.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/mortality.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1818">
-              <folding>
-                <element signature="tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#0" expanded="false" />
-                <element signature="tag#script#0;tag#div#0" expanded="false" />
-              </folding>
+            <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3492">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,12 +101,8 @@
       <file leaf-file-name="nutrition.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/nutrition.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1962">
-              <folding>
-                <element signature="tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#0" expanded="false" />
-                <element signature="tag#script#0;tag#div#0" expanded="false" />
-              </folding>
+            <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3636">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,21 +110,8 @@
       <file leaf-file-name="tb.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tb.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ivd.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/ivd.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="0" selection-start="7793" selection-end="7793" vertical-scroll-proportion="0.15766424" vertical-offset="0" max-vertical-offset="2034">
-              <folding>
-                <element signature="tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#0" expanded="false" />
-                <element signature="tag#script#0;tag#div#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -157,20 +119,8 @@
       <file leaf-file-name="tracer_medicine.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tracer_medicine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-24.037037" vertical-offset="1115" max-vertical-offset="4590">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1115" max-vertical-offset="4590">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,9 +150,7 @@
         <option value="$PROJECT_DIR$/controllers/mortalityCtrl.js" />
         <option value="$PROJECT_DIR$/controllers/nutritionCtrl.js" />
         <option value="$PROJECT_DIR$/controllers/tracermedicineCtrl.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/dashboard.html" />
-        <option value="$PROJECT_DIR$/controllers/mainCtrl.js" />
         <option value="$PROJECT_DIR$/views/malaria.html" />
         <option value="$PROJECT_DIR$/views/maternal.html" />
         <option value="$PROJECT_DIR$/views/morbidity.html" />
@@ -210,6 +158,8 @@
         <option value="$PROJECT_DIR$/views/nutrition.html" />
         <option value="$PROJECT_DIR$/views/tracer_medicine.html" />
         <option value="$PROJECT_DIR$/views/ivd.html" />
+        <option value="$PROJECT_DIR$/controllers/mainCtrl.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -334,65 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-materialize" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cleanPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cleanPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-materialize" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cleanPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cleanPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cleanPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cleanPortal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,7 +331,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25587642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2592344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -471,9 +363,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25587642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -493,6 +385,48 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/maternal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1115" max-vertical-offset="4086">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/morbidity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="4086">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mortality.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3492">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/nutrition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tracer_medicine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1115" max-vertical-offset="4590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="293" column="165" selection-start="13290" selection-end="13290" vertical-scroll-proportion="0.0" vertical-offset="5274" max-vertical-offset="18036">
@@ -508,81 +442,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="0" selection-start="11974" selection-end="11974" vertical-scroll-proportion="0.0" vertical-offset="2812" max-vertical-offset="4086">
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="165" column="0" selection-start="11974" selection-end="11974" vertical-scroll-proportion="0.0" vertical-offset="2812" max-vertical-offset="4086" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/malariaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="120" selection-start="279" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="10260">
-          <folding />
-        </state>
+        <state line="8" column="120" selection-start="279" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="10260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/maternalCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="1082" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="13680">
-          <folding />
-        </state>
+        <state line="29" column="31" selection-start="1082" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="13680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/morbidityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31806">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31806" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/mortalityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18126">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18126" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/nutritionCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13032">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13032" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/tracermedicineCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31554">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31554" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/portalService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ivd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366">
-          <folding>
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#script#0;tag#div#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/ivdCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14472">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14472" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
@@ -600,69 +505,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/malariaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10260">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/maternalCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13680">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/morbidityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31806">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31806" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/mortalityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18126">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18126" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/nutritionCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13032">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13032" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/tracermedicineCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31554">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31554" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/portalService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ivd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366">
-          <folding>
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#script#0;tag#div#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/portalService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="56" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="3690">
-          <folding />
-        </state>
+        <state line="88" column="56" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="3690" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/completenesCtrl.js">
@@ -674,64 +557,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/ivdCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="756" selection-end="756" vertical-scroll-proportion="0.53089887" vertical-offset="0" max-vertical-offset="18198">
-          <folding>
-            <element signature="e#2056#2665#0" expanded="false" />
-            <element signature="e#2714#4209#0" expanded="false" />
-            <element signature="e#4258#10534#0" expanded="false" />
-            <element signature="e#10602#11730#0" expanded="false" />
-            <element signature="e#11785#12004#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="20" column="40" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14490" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/malariaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="773" selection-end="773" vertical-scroll-proportion="0.505618" vertical-offset="0" max-vertical-offset="10278">
-          <folding />
-        </state>
+        <state line="20" column="40" selection-start="773" selection-end="773" vertical-scroll-proportion="0.505618" vertical-offset="0" max-vertical-offset="10278" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1512">
-          <folding />
-        </state>
+        <state line="48" column="38" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/maternalCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="733" selection-end="774" vertical-scroll-proportion="0.48033708" vertical-offset="0" max-vertical-offset="13698">
-          <folding />
-        </state>
+        <state line="19" column="25" selection-start="733" selection-end="774" vertical-scroll-proportion="0.48033708" vertical-offset="0" max-vertical-offset="13698" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/morbidityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="550" selection-end="550" vertical-scroll-proportion="0.2275281" vertical-offset="108" max-vertical-offset="31842">
-          <folding />
-        </state>
+        <state line="15" column="40" selection-start="550" selection-end="550" vertical-scroll-proportion="0.2275281" vertical-offset="108" max-vertical-offset="31842" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/mortalityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="798" selection-end="798" vertical-scroll-proportion="0.58146065" vertical-offset="0" max-vertical-offset="18108">
-          <folding />
-        </state>
+        <state line="25" column="40" selection-start="798" selection-end="798" vertical-scroll-proportion="0.58146065" vertical-offset="0" max-vertical-offset="18108" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/nutritionCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="40" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13050">
-          <folding />
-        </state>
+        <state line="24" column="40" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13050" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
@@ -741,25 +597,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="154" selection-start="7868" selection-end="7868" vertical-scroll-proportion="-12.666667" vertical-offset="2214" max-vertical-offset="3114">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/mainCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2106">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/tracermedicineCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="33" selection-start="831" selection-end="856" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="31536">
-          <folding />
-        </state>
+        <state line="26" column="33" selection-start="831" selection-end="856" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="31536" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/downloads.html">
@@ -776,88 +616,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="18" selection-start="174" selection-end="1774" vertical-scroll-proportion="-3.851852" vertical-offset="4" max-vertical-offset="3906">
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/malaria.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="23" selection-end="7792" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="2106">
-          <folding>
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#script#0;tag#div#0" expanded="false" />
-          </folding>
+        <state line="1" column="4" selection-start="23" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="3780">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/maternal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-24.037037" vertical-offset="1115" max-vertical-offset="4086">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1115" max-vertical-offset="4086">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/morbidity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-65.333336" vertical-offset="0" max-vertical-offset="4086">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="4086">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/mortality.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1818">
-          <folding>
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#script#0;tag#div#0" expanded="false" />
-          </folding>
+        <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3492">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/nutrition.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="1962">
-          <folding>
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#script#0;tag#div#0" expanded="false" />
-          </folding>
+        <state line="98" column="0" selection-start="7792" selection-end="7792" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3636">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -870,30 +660,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/tracer_medicine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="-24.037037" vertical-offset="1115" max-vertical-offset="4590">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="98" column="0" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="1115" max-vertical-offset="4590">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ivd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="7793" selection-end="7793" vertical-scroll-proportion="0.15766424" vertical-offset="0" max-vertical-offset="2034">
+        <state line="99" column="0" selection-start="7793" selection-end="7793" vertical-scroll-proportion="0.15766424" vertical-offset="0" max-vertical-offset="2034" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="18" selection-start="174" selection-end="1774" vertical-scroll-proportion="-1.6613139" vertical-offset="1246" max-vertical-offset="3906" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="245" column="29" selection-start="11747" selection-end="11761" vertical-scroll-proportion="0.0" vertical-offset="4410" max-vertical-offset="18198">
           <folding>
-            <element signature="tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#script#0;tag#div#0" expanded="false" />
+            <element signature="e#2056#2665#0" expanded="false" />
+            <element signature="e#2714#4209#0" expanded="false" />
+            <element signature="e#4258#10534#0" expanded="false" />
+            <element signature="e#10602#11730#0" expanded="false" />
+            <element signature="e#11785#12004#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/mainCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="10" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="32" selection-start="6770" selection-end="6770" vertical-scroll-proportion="0.31532848" vertical-offset="1404" max-vertical-offset="2646">
+          <folding>
+            <element signature="tag#form#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
