@@ -19,8 +19,8 @@ angular.module("hmisPortal")
         $scope.cards = {};
         $scope.data = {};
         $rootScope.periodType = 'years';
-        portalService.orgUnitId = "m0frOspS7JY";
-        portalService.period = "2014";
+        portalService.orgUnitId = $rootScope.selectedOrgUnit;
+        portalService.period = $rootScope.selectedPeriod;
         $scope.selectedOrgUnitLevel = "2";
 
         $scope.cards.malaria = [
@@ -109,6 +109,8 @@ angular.module("hmisPortal")
                 card.chart = type;
                 $scope.data.chartType = type;
             }
+            portalService.orgUnitId = $rootScope.selectedOrgUnit;
+            portalService.period = $rootScope.selectedPeriod;
             portalService.prepareSeries(card,$scope.data.chartType);
         };
 
@@ -193,6 +195,8 @@ angular.module("hmisPortal")
 
 
         $rootScope.firstClick = function(){
+            portalService.orgUnitId = $rootScope.selectedOrgUnit;
+            portalService.period = $rootScope.selectedPeriod;
             angular.forEach($scope.cards.malaria,function(value){
 //              $scope.data.chartType = value.chart;
                 portalService.prepareSeries(value,value.chart);

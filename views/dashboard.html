@@ -107,7 +107,7 @@
                                 <highchart ng-if="!jinsi.displayTable" config="jinsichartConfig"></highchart>
                             </div>
                             <div style="width: 100%" ng-if="jinsi.displayTable" >
-                                <p ng-if="chartConfig.loading" class="center"><img src="assets/img/loading.gif">Loading ....</p>
+                                <p ng-if="jinsichartConfig.loading" class="center"><img src="assets/img/loading.gif">Loading ....</p>
                                 <table ng-if="!jinsichartConfig.loading" class="bordered striped centered" id="jinsi">
                                     <thead>
                                     <tr>
@@ -171,7 +171,7 @@
                         <span class="card-title activator grey-text text-darken-4">POPULATION BY AGE GROUP<i class="material-icons right">more_vert</i></span>
                         <p>
                             <a ng-click="changeChart($event,icon.name)" ng-repeat="icon in icons" title="{{ icon.name }}" class="btn-floating btn-small waves-effect waves-light teal darken-2" style="padding-top: 5px;padding-left: 8px"><img src="assets/img/{{icon.image}}" style="height: 20px;width: 20px"/></i></a>
-                            <a ng-click="downloadExcel()" target="_blank"  title="Download Excel" class="btn-floating btn-small waves-effect waves-light teal darken-2" style="padding-top: 5px;padding-left: 8px"><img src="assets/img/cvs.jpg" style="height: 20px;width: 20px"/></i></a>
+                            <a ng-click="downloadExcel1()" target="_blank"  title="Download Excel" class="btn-floating btn-small waves-effect waves-light teal darken-2" style="padding-top: 5px;padding-left: 8px"><img src="assets/img/cvs.jpg" style="height: 20px;width: 20px"/></i></a>
                         </p>
                     </div>
                     <div class="card-reveal">

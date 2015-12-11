@@ -79,7 +79,7 @@ angular.module("hmisPortal")
             $scope.prepareSeries();
         };
 
-        $scope.downloadExcel = function(){
+        $scope.downloadExcel1 = function(){
             var base = "http://139.162.204.124/dhis/";
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
@@ -107,9 +107,10 @@ angular.module("hmisPortal")
                 var url = "";
 
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-1;LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
+//                    http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=pe:2014&dimension=ou:LEVEL-2;m0frOspS7JY&displayProperty=NAME&outputIdScheme=NAME
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-1;LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&outputIdScheme=NAME";
                 }else{
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+card.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&outputIdScheme=NAME";
                 }
 
                 $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
