@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed684a7-0037-4544-a5ee-17e8d170167b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/updates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/mainCtrl.js" afterPath="$PROJECT_DIR$/controllers/mainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/routes.js" afterPath="$PROJECT_DIR$/assets/js/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/updates.html" afterPath="$PROJECT_DIR$/views/updates.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cleanPortal.iws" />
@@ -41,7 +38,7 @@
       <file leaf-file-name="portalService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/portalService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="4192" selection-end="4192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690">
+            <state line="101" column="0" selection-start="4192" selection-end="4192" vertical-scroll-proportion="0.0" vertical-offset="1818" max-vertical-offset="3690">
               <folding />
             </state>
           </provider>
@@ -59,7 +56,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="43" selection-start="3805" selection-end="3805" vertical-scroll-proportion="-10.666667" vertical-offset="1116" max-vertical-offset="3456">
+            <state line="78" column="43" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="3456">
               <folding />
             </state>
           </provider>
@@ -68,8 +65,10 @@
       <file leaf-file-name="updates.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/updates.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="453" selection-end="453" vertical-scroll-proportion="0.25787964" vertical-offset="0" max-vertical-offset="698">
-              <folding />
+            <state line="8" column="43" selection-start="477" selection-end="477" vertical-scroll-proportion="0.21021898" vertical-offset="0" max-vertical-offset="685">
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -345,7 +344,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22162525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22498322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -377,9 +376,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2666219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -619,16 +618,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/maternalCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="61" selection-start="6469" selection-end="6469" vertical-scroll-proportion="0.0" vertical-offset="2592" max-vertical-offset="13806">
-          <folding />
-        </state>
+        <state line="174" column="61" selection-start="6469" selection-end="6469" vertical-scroll-proportion="0.0" vertical-offset="2592" max-vertical-offset="13806" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/malariaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="107" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10350">
-          <folding />
-        </state>
+        <state line="8" column="107" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
@@ -640,9 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/morbidityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1124" column="89" selection-start="43990" selection-end="43990" vertical-scroll-proportion="0.0" vertical-offset="19430" max-vertical-offset="31842">
-          <folding />
-        </state>
+        <state line="1124" column="89" selection-start="43990" selection-end="43990" vertical-scroll-proportion="0.0" vertical-offset="19430" max-vertical-offset="31842" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/services/portalService.js">
@@ -668,15 +661,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="43" selection-start="3805" selection-end="3805" vertical-scroll-proportion="-10.666667" vertical-offset="1116" max-vertical-offset="3456">
+        <state line="78" column="43" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="3456">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/updates.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="453" selection-end="453" vertical-scroll-proportion="0.25787964" vertical-offset="0" max-vertical-offset="698">
-          <folding />
+        <state line="8" column="43" selection-start="477" selection-end="477" vertical-scroll-proportion="0.21021898" vertical-offset="0" max-vertical-offset="685">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
