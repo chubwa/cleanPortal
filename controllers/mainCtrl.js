@@ -24,16 +24,17 @@ angular.module("hmisPortal")
         };
 
         $scope.userGroupID='TzdTxMEbt1W';
-        $rootScope.periodType = 'years';
         var userGroups =[];
         var dataTextToSend={};
-
+        $scope.showLoading=false;
+        $scope.messageSend=false;
         var messageUrl='http://139.162.204.124/dhis/api/messageConversations';
-        $scope.sendMessage=function(subject,text,email,phoneNo){
+        $scope.sendMessage=function(subject,textMessage,mail,phone){
+            $scope.showLoading=true;
             userGroups.length=0;
             userGroups.push({'id':$scope.userGroupID});
             dataTextToSend['subject']=subject;
-            dataTextToSend['text']=text+" Contacts Details: Email " +email+"  and Phone number " +phoneNo;
+            dataTextToSend['text']=textMessage+" Contacts Details: Email " +mail+"  and Phone number " +phone;
             dataTextToSend['userGroups']=userGroups;
             console.log(dataTextToSend);
             $http({
@@ -42,11 +43,23 @@ angular.module("hmisPortal")
                 data: dataTextToSend
             }).then(function(response) {
                     console.log(dataTextToSend);
+                    $scope.showLoading=false;
+                    $scope.messageSend=true;
+                    $scope.subject='';
+                    $scope.textMessage='';
+                    $scope.mail='';
+                    $scope.phone='';
+                    $timeout($scope.closeModalFunction,3000);
                 },
                 function(response) { // optional
+                    $scope.showLoading=false;
                 });
 
-        };
+
+        }
+        $scope.closeModalFunction=function(){
+            $('#modal1').closeModal();
+        }
         $scope.cards = {};
         $scope.data = {};
         $rootScope.periodType = 'years';
