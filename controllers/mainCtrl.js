@@ -56,10 +56,12 @@ angular.module("hmisPortal")
                 });
 
 
-        }
+        };
+
         $scope.closeModalFunction=function(){
             $('#modal1').closeModal();
-        }
+        };
+        
         $scope.cards = {};
         $scope.data = {};
         $rootScope.periodType = 'years';

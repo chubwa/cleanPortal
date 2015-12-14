@@ -69,6 +69,11 @@ angular.module("hmisPortal")
             controller: 'mainCtrl'
         });
 
+        $routeProvider.when("/updates",{
+            templateUrl: 'views/updates.html',
+            controller: 'mainCtrl'
+        });
+
 
         $routeProvider.otherwise({
             redirectTo: '/home'
