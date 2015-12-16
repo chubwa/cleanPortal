@@ -9,6 +9,7 @@ angular.module("hmisPortal")
     .controller("mainCtrl",function ($rootScope,$scope,$q,$http) {
 
         $rootScope.showLoader = false;
+        $rootScope.currentDownloading = false;
         $rootScope.$on("$routeChangeStart",
             function (event, current, previous, rejection) {
                 $rootScope.showLoader = true;

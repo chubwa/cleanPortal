@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed684a7-0037-4544-a5ee-17e8d170167b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/updates.html" afterPath="$PROJECT_DIR$/views/updates.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard.html" afterPath="$PROJECT_DIR$/views/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/dashboardCtrl.js" afterPath="$PROJECT_DIR$/controllers/dashboardCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/mainCtrl.js" afterPath="$PROJECT_DIR$/controllers/mainCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cleanPortal.iws" />
@@ -26,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mortalityCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/mortalityCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="807" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="18144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="portalService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/portalService.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,7 +41,7 @@
       <file leaf-file-name="mainCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/mainCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="8" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="2340">
+            <state line="11" column="46" selection-start="209" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="2358">
               <folding />
             </state>
           </provider>
@@ -56,19 +50,31 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="43" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="3456">
-              <folding />
+            <state line="37" column="88" selection-start="1530" selection-end="1530" vertical-scroll-proportion="29.333334" vertical-offset="1458" max-vertical-offset="3546">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updates.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="18" selection-start="999" selection-end="999" vertical-scroll-proportion="0.34160584" vertical-offset="54" max-vertical-offset="4374">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updates.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/updates.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="477" selection-end="477" vertical-scroll-proportion="0.21021898" vertical-offset="0" max-vertical-offset="685">
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="8" column="43" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="324">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +91,7 @@
       <file leaf-file-name="dashboardCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="317" selection-start="3671" selection-end="3692" vertical-scroll-proportion="0.0" vertical-offset="1177" max-vertical-offset="9972">
+            <state line="105" column="48" selection-start="4662" selection-end="4662" vertical-scroll-proportion="0.0" vertical-offset="4050" max-vertical-offset="10044">
               <folding />
             </state>
           </provider>
@@ -144,16 +150,16 @@
         <option value="$PROJECT_DIR$/views/nutrition.html" />
         <option value="$PROJECT_DIR$/views/tracer_medicine.html" />
         <option value="$PROJECT_DIR$/views/ivd.html" />
-        <option value="$PROJECT_DIR$/controllers/dashboardCtrl.js" />
-        <option value="$PROJECT_DIR$/views/dashboard.html" />
         <option value="$PROJECT_DIR$/controllers/jinsiCtrl.js" />
         <option value="$PROJECT_DIR$/controllers/maternalCtrl.js" />
         <option value="$PROJECT_DIR$/controllers/malariaCtrl.js" />
         <option value="$PROJECT_DIR$/services/portalService.js" />
-        <option value="$PROJECT_DIR$/controllers/mainCtrl.js" />
         <option value="$PROJECT_DIR$/assets/js/routes.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/updates.html" />
+        <option value="$PROJECT_DIR$/controllers/mainCtrl.js" />
+        <option value="$PROJECT_DIR$/controllers/dashboardCtrl.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -193,7 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,6 +307,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,7 +350,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22498322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23169912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -592,11 +598,6 @@
         <state line="99" column="0" selection-start="7793" selection-end="7793" vertical-scroll-proportion="0.15766424" vertical-offset="0" max-vertical-offset="2034" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="57" selection-start="15568" selection-end="15592" vertical-scroll-proportion="-14.62963" vertical-offset="2161" max-vertical-offset="2934" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/jinsiCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="405" column="234" selection-start="18126" selection-end="18126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21654" />
@@ -626,13 +627,6 @@
         <state line="8" column="107" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10350" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="317" selection-start="3671" selection-end="3692" vertical-scroll-proportion="0.0" vertical-offset="1177" max-vertical-offset="9972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/morbidityCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1124" column="89" selection-start="43990" selection-end="43990" vertical-scroll-proportion="0.0" vertical-offset="19430" max-vertical-offset="31842" />
@@ -645,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/mainCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="8" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="2340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="39" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="787" max-vertical-offset="1602">
@@ -659,18 +646,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/views/updates.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="43" selection-start="3805" selection-end="3805" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="3456">
+        <state line="8" column="43" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="324">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/updates.html">
+    <entry file="file://$PROJECT_DIR$/controllers/mainCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="477" selection-end="477" vertical-scroll-proportion="0.21021898" vertical-offset="0" max-vertical-offset="685">
+        <state line="11" column="46" selection-start="209" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2358">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/dashboardCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="48" selection-start="4662" selection-end="4662" vertical-scroll-proportion="0.0" vertical-offset="4050" max-vertical-offset="10044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="88" selection-start="1530" selection-end="1530" vertical-scroll-proportion="29.333334" vertical-offset="1458" max-vertical-offset="3546">
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="999" selection-end="999" vertical-scroll-proportion="0.34160584" vertical-offset="54" max-vertical-offset="4374">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

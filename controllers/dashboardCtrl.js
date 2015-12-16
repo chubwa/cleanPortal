@@ -81,6 +81,8 @@ angular.module("hmisPortal")
 
         $scope.downloadExcel1 = function(){
             var base = "http://139.162.204.124/dhis/";
+            $rootScope.currentDownloading = true;
+
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
@@ -101,6 +103,8 @@ angular.module("hmisPortal")
         };
         $scope.downloadPopulationExcel = function(card){
             var base = "http://139.162.204.124/dhis/";
+            $rootScope.currentDownloading = true;
+
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
