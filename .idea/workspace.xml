@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed684a7-0037-4544-a5ee-17e8d170167b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/antenatal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/antenatalCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/dashboardCtrl.js" afterPath="$PROJECT_DIR$/controllers/dashboardCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/jinsiCtrl.js" afterPath="$PROJECT_DIR$/controllers/jinsiCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/malariaCtrl.js" afterPath="$PROJECT_DIR$/controllers/malariaCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/routes.js" afterPath="$PROJECT_DIR$/assets/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/antenatalCtrl.js" afterPath="$PROJECT_DIR$/controllers/antenatalCtrl.js" />
     </list>
     <ignored path="cleanPortal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,8 +61,8 @@
       <file leaf-file-name="antenatalCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/antenatalCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6329527" vertical-offset="362" max-vertical-offset="1005">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.53833604" vertical-offset="0" max-vertical-offset="1005">
+              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -768,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/antenatalCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6329527" vertical-offset="362" max-vertical-offset="1005">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.53833604" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
           <folding />
         </state>
       </provider>
