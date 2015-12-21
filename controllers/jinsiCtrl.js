@@ -899,6 +899,7 @@ angular.module("hmisPortal")
                             var number = $scope.getFacilityData($scope.regions,val.id,value.uid);
                             seri.push({name:value.name,value:parseInt(number)});
                         });
+
                         $scope.typetable.colums.push({name:val.name,values:seri});
                     });
                 }
@@ -1035,6 +1036,7 @@ angular.module("hmisPortal")
                         });
                         $scope.HRtable.colums.push({name:val.name,values:seri});
                     });
+                    console.log($scope.HRtable.colums);
                 }
                 else{
                     delete $scope.HRchartConfig.chart;

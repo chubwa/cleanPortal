@@ -204,6 +204,7 @@ angular.module("hmisPortal")
                             });
                             $scope.table.colums.push({name:val.name,values:seri});
                         });
+                        console.log($scope.table.colums);
                     }
                     else{
                         delete $scope.chartConfig.chart;
