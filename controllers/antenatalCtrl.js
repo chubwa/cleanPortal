@@ -8,7 +8,7 @@ angular.module("hmisPortal")
         $httpProvider.defaults.headers.post["Content-Type"] = "application/json";
     })
     .controller("antenatalCtrl",function ($rootScope,$scope,$http,$location,$timeout,olData,olHelpers,shared) {
-         $scope.lastCard = function () {
+       $scope.lastCard = function () {
              $scope.loadingImage=true;
             var base = "http://139.162.204.124/dhis/";
              $.post(base + "dhis-web-commons-security/login.action?authOnly=true", {
@@ -56,7 +56,7 @@ angular.module("hmisPortal")
             })
         }
         $rootScope.firstClick = function(){
-         $scope.lastCard();
+        $scope.lastCard();
         }
         $scope.firstClick();
     });
