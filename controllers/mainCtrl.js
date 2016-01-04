@@ -29,7 +29,7 @@ angular.module("hmisPortal")
         var dataTextToSend={};
         $scope.showLoading=false;
         $scope.messageSend=false;
-        var messageUrl='http://139.162.204.124/dhis/api/messageConversations';
+        var messageUrl='https://dhis.moh.go.tz/api/messageConversations';
         $scope.sendMessage=function(subject,textMessage,mail,phone){
             $scope.showLoading=true;
             userGroups.length=0;
