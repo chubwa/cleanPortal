@@ -149,7 +149,7 @@ angular.module("hmisPortal")
                 }];
                 angular.forEach(dataTable.metaData.ou,function(region){
                     generalArray.push({"orgUnit":dataTable.metaData.names[region],underOne:ogUnitsObjectConstruct(underOne,dataTable,dataTable.rows,region),
-                        undertwo:undertwoObject(undertwo,dataTable,dataTable.rows,region),underMaralia:underMaraliaObject(underMaralia,dataTable,dataTable.rows,region),
+                        undertwo:undertwoObject(undertwo,dataTable,datable.rowsaT,region),underMaralia:underMaraliaObject(underMaralia,dataTable,dataTable.rows,region),
                         underthree:underthreeObject(underthree,dataTable,dataTable.rows,region),underfour:underfourObject(underfour,dataTable,dataTable.rows,region),
                         underIPT2:underIPT2Object(underIPT2,dataTable,dataTable.rows,region),underITN:underITNObject(underITN,dataTable,dataTable.rows,region),
                         underITNOne:underITNOneObject(underITNOne,dataTable,dataTable.rows,region),underOPD:underOPDObject(underOPD,dataTable,dataTable.rows,region),

@@ -73,7 +73,10 @@ angular.module("hmisPortal")
             templateUrl: 'views/updates.html',
             controller: 'mainCtrl'
         });
-
+        $routeProvider.when("/antenatal",{
+            templateUrl: 'views/antenatal.html',
+            controller: 'antenatalCtrl'
+        });
 
         $routeProvider.otherwise({
             redirectTo: '/home'
