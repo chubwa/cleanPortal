@@ -77,6 +77,30 @@ angular.module("hmisPortal")
             templateUrl: 'views/antenatal.html',
             controller: 'antenatalCtrl'
         });
+        $routeProvider.when("/labour",{
+            templateUrl: 'views/labour.html',
+            controller: 'labourCtrl'
+        });
+        $routeProvider.when("/child",{
+            templateUrl: 'views/child.html',
+            controller: 'childCtrl'
+        });
+        $routeProvider.when("/ipd",{
+            templateUrl: 'views/ipd.html',
+            controller: 'ipdCtrl'
+        });
+        $routeProvider.when("/opd",{
+            templateUrl: 'views/opd.html',
+            controller: 'opdCtrl'
+        });
+        $routeProvider.when("/postnatal",{
+            templateUrl: 'views/postnatal.html',
+            controller: 'postnatalCtrl'
+        });
+        $routeProvider.when("/planning",{
+            templateUrl: 'views/planning.html',
+            controller: 'planningCtrl'
+        });
 
         $routeProvider.otherwise({
             redirectTo: '/home'
