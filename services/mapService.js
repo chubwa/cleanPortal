@@ -311,6 +311,7 @@ angular.module("hmisPortal")
         angular.forEach(max_and_min[2],function(valueL,indexL){
             if(valueTouseArray[valueIndex].id==valueL.id){
                 i++;
+
                 if(valueL.value!=0&&valueL.value>=max_and_min[0]){
 
                     legend[2].members=legend[2].members+1;
@@ -318,7 +319,7 @@ angular.module("hmisPortal")
                     return false;
                 }
 
-                if(valueL.value!=0&&valueL.value<=((max_and_min[1]+max_and_min[0])/2)&&valueL.value>max_and_min[1]){
+                if(valueL.value!=0&&valueL.value>max_and_min[0]&&valueL.value<max_and_min[1]){
 
                     legend[1].members=legend[1].members+1;
                     classfy = legend[1];
@@ -331,8 +332,10 @@ angular.module("hmisPortal")
                     return false;
                 }
 
-//                legend[0].members= i;
-//                classfy = legend[0];
+                legend[0].members= i;
+                classfy = legend[0];
+
+
             }else{
 
                 return false;
