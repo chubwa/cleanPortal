@@ -2,7 +2,7 @@
  * Created by kelvin on 11/16/15.
  */
 angular.module("hmisPortal")
-   .service('portalService',function($http){
+   .service('portalService',function($http,mapService) {
 
         var self = this;
         //initializing shared data
@@ -12,14 +12,14 @@ angular.module("hmisPortal")
         this.orgUnitName = '';
         this.base = "http://139.162.204.124/dhis/";
         this.icons = [
-            {name:'table',image:'table.jpg',action:''},
-            {name:'bar',image:'bar.png',action:''},
-            {name:'line',image:'line.png',action:''},
-            {name:'combined',image:'combined.jpg',action:''},
-            {name:'column',image:'column.png',action:''},
-            {name:'area',image:'area.jpg',action:''},
-            {name:'pie',image:'pie.png',action:''},
-            {name:'map',image:'map.jpg',action:''}
+            {name: 'table', image: 'table.jpg', action: ''},
+            {name: 'bar', image: 'bar.png', action: ''},
+            {name: 'line', image: 'line.png', action: ''},
+            {name: 'combined', image: 'combined.jpg', action: ''},
+            {name: 'column', image: 'column.png', action: ''},
+            {name: 'area', image: 'area.jpg', action: ''},
+            {name: 'pie', image: 'pie.png', action: ''},
+            {name: 'map', image: 'map.jpg', action: ''}
         ];
         self.chartObject = {
             title: {
@@ -27,38 +27,41 @@ angular.module("hmisPortal")
             },
             xAxis: {
                 categories: [],
-                    labels:{
+                labels: {
                     rotation: -90,
-                        style:{ "color": "#000000", "fontWeight": "normal" }
+                    style: { "color": "#000000", "fontWeight": "normal" }
                 }
             },
             yAxis: {
                 min: 0,
-                    title: {
+                title: {
                     text: ''
-                },labels:{
-                    style:{ "color": "#000000", "fontWeight": "bold" }
+                }, labels: {
+                    style: { "color": "#000000", "fontWeight": "bold" }
                 }
             },
             labels: {
-                items: [{
-                    html: 'doses',
-                    style: {
-                        left: '50px',
-                        top: '18px',
-                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                items: [
+                    {
+                        html: 'doses',
+                        style: {
+                            left: '50px',
+                            top: '18px',
+                            color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                        }
                     }
-                }]
+                ]
             },
             series: []
         };
 
-        this.authenticateDHIS = function(){
+        this.authenticateDHIS = function () {
             var promise = $.post( self.base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(response){
                 console.log(response);
             });
+
 //             $http.post(  + "dhis-web-commons-security/login.action?authOnly=true", {
 //                j_username: "portal", j_password: "Portal123"
 //            }).then(function (response) {
@@ -70,27 +73,27 @@ angular.module("hmisPortal")
             return promise;
         }
 
-        this.prepareData = function(jsonObject){
+        this.prepareData = function (jsonObject) {
             var data = [];
-            data.push({'name':jsonObject.metaData.names[self.orgUnitId],'id':self.orgUnitId,'value':getDataFromUrl(jsonObject.rows,self.orgUnitId)});
+            data.push({'name': jsonObject.metaData.names[self.orgUnitId], 'id': self.orgUnitId, 'value': getDataFromUrl(jsonObject.rows, self.orgUnitId)});
 
-            angular.forEach(jsonObject.metaData.ou,function(region){
-                if(region != self.orgUnitId ){
-                    data.push({'name':jsonObject.metaData.names[region],'id':region,'value':getDataFromUrl(jsonObject.rows,region)});
+            angular.forEach(jsonObject.metaData.ou, function (region) {
+                if (region != self.orgUnitId) {
+                    data.push({'name': jsonObject.metaData.names[region], 'id': region, 'value': getDataFromUrl(jsonObject.rows, region)});
                 }
             });
             return data;
         };
 
-        this.downloadExcel = function(id){
-            self.authenticateDHIS().then(function(){
+        this.downloadExcel = function (id) {
+            self.authenticateDHIS().then(function () {
                 var url = "";
-                if(self.selectedOrgUnit == "m0frOspS7JY"){
-                    url = "https://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+self.period+"&dimension=ou:LEVEL-1;LEVEL-2;"+self.orgUnitId+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
-                }else{
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+self.period+"&dimension=ou:LEVEL-2;LEVEL-3;"+self.orgUnitId+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                if (self.selectedOrgUnit == "m0frOspS7JY") {
+                    url = "https://139.162.204.124/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-1;LEVEL-2;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                } else {
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-2;LEVEL-3;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }
-                $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
+                $http.get(url, {'Content-Type': 'application/csv;charset=UTF-8'}).success(function (data) {
                     var a = document.createElement('a');
                     var blob = new Blob([data]);
                     a.href = window.URL.createObjectURL(blob);
@@ -99,19 +102,22 @@ angular.module("hmisPortal")
                 });
             });
         };
+        this.drawMap = function (orgUnit, level,card,cardtitle,valueTouseArray) {
+            mapService.renderMap(self.base,orgUnit, level, card,cardtitle,valueTouseArray);
 
+        }
 
-        this.prepareSeries = function(cardObject,chart){
+        this.prepareSeries = function (cardObject, chart) {
             cardObject.chartObject.loading = true;
-            self.authenticateDHIS().then(function(){
-                if(chart == 'table'){
+            self.authenticateDHIS().then(function () {
+                if (chart == 'table') {
                     cardObject.displayTable = true;
                     cardObject.displayMap = false;
-                }else if(chart == 'map'){
+                } else if (chart == 'map') {
                     cardObject.displayMap = true;
                     cardObject.displayTable = false;
                 }
-                else{
+                else {
                     cardObject.displayMap = false;
                     cardObject.displayTable = false;
                 }
@@ -119,13 +125,13 @@ angular.module("hmisPortal")
                 cardObject.chartObject.yAxis.title.text = cardObject.title.toLowerCase();
 
                 var url = '';
-                if(self.orgUnitId == "m0frOspS7JY"){
+                if (self.orgUnitId == "m0frOspS7JY") {
                     url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-1;LEVEL-2;m0frOspS7JY&filter=pe:"+self.period+"&displayProperty=NAME";
-                }else{
+                } else {
                     url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+self.orgUnitId+"&filter=pe:"+self.period+"&displayProperty=NAME";
                 }
                 cardObject.chartObject.loading = true;
-                $http.get(url).success(function(data){
+                $http.get(url).success(function (data) {
                     var area = [];
                     cardObject.chartObject.xAxis.categories = [];
                     //
@@ -133,63 +139,66 @@ angular.module("hmisPortal")
                         var dataToUse = self.prepareData(data);
                         console.log(dataToUse)
                         //
-                        angular.forEach(dataToUse,function(val){
+                        angular.forEach(dataToUse, function (val) {
                             cardObject.chartObject.xAxis.categories.push(val.name);
                         });
                         var normalseries = [];
-                        if(chart == "pie"){
+                        if (chart == "pie") {
                             delete cardObject.chartObject.chart;
                             var serie = [];
-                            angular.forEach(dataToUse,function(val){
+                            angular.forEach(dataToUse, function (val) {
                                 serie.push({name: val.name, y: parseInt(val.value)})
                             });
-                            normalseries.push({type: chart, name:cardObject.title , data: serie,showInLegend: true,
+                            normalseries.push({type: chart, name: cardObject.title, data: serie, showInLegend: true,
                                 dataLabels: {
                                     enabled: false
                                 } });
                             cardObject.chartObject.series = normalseries;
                         }
-                        else if(chart == "combined"){
+                        else if (chart == "combined") {
                             delete cardObject.chartObject.chart;
                             var serie1 = [];
                             var serie = [];
 
-                            angular.forEach(dataToUse,function(val){
+                            angular.forEach(dataToUse, function (val) {
                                 serie.push(parseInt(val.value));
-                                serie1.push({name: val.name , y: parseInt(val.value) })
+                                serie1.push({name: val.name, y: parseInt(val.value) })
                             });
                             normalseries.push({type: 'column', name: cardObject.title, data: serie});
                             normalseries.push({type: 'spline', name: cardObject.title, data: serie});
-                            normalseries.push({type: 'pie', name: cardObject.title, data: serie1,center: [100, 80],size: 150,showInLegend: false,
+                            normalseries.push({type: 'pie', name: cardObject.title, data: serie1, center: [100, 80], size: 150, showInLegend: false,
                                 dataLabels: {
                                     enabled: false
                                 }});
                             cardObject.chartObject.series = normalseries;
                         }
-                        else if(chart == 'table'){
+                        else if (chart == 'table') {
                             cardObject.table = {};
-                            cardObject.table.colums =[];
-                            angular.forEach(dataToUse,function(val){
-                                cardObject.table.colums.push({name:val.name,value:parseInt(val.value)});
+                            cardObject.table.colums = [];
+                            angular.forEach(dataToUse, function (val) {
+                                cardObject.table.colums.push({name: val.name, value: parseInt(val.value)});
                             });
-                        }else if(chart == 'map'){
-                            if(self.orgUnitId == "m0frOspS7JY"){
-                                //$scope.drawMap($scope.selectedOrgUnit,2,cardObject);
-                            }else{
-                                //$scope.drawMap($scope.selectedOrgUnit,3,cardObject);
+                        } else if (chart == 'map') {
+                            console.log(dataToUse);
+                            if (self.orgUnitId == "m0frOspS7JY") {
+                                self.drawMap(this.orgUnitId,2,cardObject,dataToUse);
+                            } else {
+                                self.drawMap(this.orgUnitId, 3, cardObject,dataToUse);
                             }
                         }
-                        else{
+                        else {
                             delete cardObject.chartObject.chart;
                             var serie = [];
-                            angular.forEach(dataToUse,function(val){
+                            angular.forEach(dataToUse, function (val) {
                                 serie.push(val.value);
                             });
-                            cardObject.chartObject.chart={};
-                            cardObject.chartObject.chart.type=chart;
+                            cardObject.chartObject.chart = {};
+                            cardObject.chartObject.chart.type = chart;
                             normalseries.push({type: chart, name: cardObject.title, data: serie})
                             cardObject.chartObject.series = normalseries;
                         }
+
+
                         cardObject.chartObject.loading = false
                     }
 
@@ -197,4 +206,6 @@ angular.module("hmisPortal")
             });
 
         };
+
+
     })
