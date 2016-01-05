@@ -290,10 +290,10 @@ angular.module("hmisPortal")
             }
 
             if(((max-min)/count)<1){
-                legends = [{set:mins+"",color:"#FF0000",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#DEBE0C",classfy:"medium",members:0},{set:(max)+"<",color:"#2F8533",classfy:"max",members:0}];
+                legends = [{set:mins+"",color:"#FF0000",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#DEBE0C",classfy:"medium",members:0},{set:((max+min)/2).toFixed(0)+" - "+(max),color:"#25E90F",classfy:"inter",members:0},{set:(max)+"<",color:"#2F8533",classfy:"max",members:0}];
             }else{
                 var intervals = ((max-min)/count).toFixed(0);
-                legends = [{set:mins+"",color:"#FF0000",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#DEBE0C",classfy:"medium",members:0},{set:(max)+"<",color:"#2F8533",classfy:"max",members:0}];
+                legends = [{set:mins+"",color:"#FF0000",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#DEBE0C",classfy:"medium",members:0},{set:((max+min)/2).toFixed(0)+" - "+(max),color:"#25E90F",classfy:"inter",members:0},{set:(max)+"<",color:"#2F8533",classfy:"max",members:0}];
 
             }
             return legends;
@@ -313,7 +313,14 @@ angular.module("hmisPortal")
                 i++;
                 if(valueL.value!=0&&valueL.value>=max_and_min[0]){
 
-                    legend[2].members=legend[2].members+1;
+                    legend[2].members=legend[3].members+1;
+                    classfy = legend[3];
+                    return false;
+                }
+
+                if(valueL.value!=0&&valueL.value>((max_and_min[1]+max_and_min[0])/2)&&valueL.value<max_and_min[0]){
+
+                    legend[1].members=legend[2].members+1;
                     classfy = legend[2];
                     return false;
                 }
