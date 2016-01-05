@@ -313,14 +313,14 @@ angular.module("hmisPortal")
                 i++;
                 if(valueL.value!=0&&valueL.value>=max_and_min[0]){
 
-                    legend[2].members=legend[3].members+1;
+                    legend[3].members=legend[3].members+1;
                     classfy = legend[3];
                     return false;
                 }
 
                 if(valueL.value!=0&&valueL.value>((max_and_min[1]+max_and_min[0])/2)&&valueL.value<max_and_min[0]){
 
-                    legend[1].members=legend[2].members+1;
+                    legend[2].members=legend[2].members+1;
                     classfy = legend[2];
                     return false;
                 }
