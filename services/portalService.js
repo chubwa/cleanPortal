@@ -103,7 +103,7 @@ angular.module("hmisPortal")
             });
         };
         this.drawMap = function (orgUnit, level,card,cardtitle,valueTouseArray) {
-            mapService.renderMap(orgUnit, level, card,cardtitle,valueTouseArray);
+            mapService.renderMap(self.base,orgUnit, level, card,cardtitle,valueTouseArray);
 
         }
 

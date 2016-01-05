@@ -2,7 +2,7 @@ angular.module("hmisPortal")
 .service('mapService',['$rootScope','$http','olData','olHelpers','shared',function($scope,$http,olData,olHelpers,shared){
 
     var map = this;
-    map.renderMap = function(parentUid,level,card,valueTouseArray){
+    map.renderMap = function(baseUrl,parentUid,level,card,valueTouseArray){
         localStorage.clear();
         var cardseries = removeDuplicatesInSeries( card.chartObject.series );
         var max_and_min = getMaxAndMin(cardseries);
@@ -10,7 +10,7 @@ angular.module("hmisPortal")
         card.legend = legend;
         map.shared = shared;
         shared.facility =3029;
-        var url = 'https://dhis.moh.go.tz/api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
+        var url = baseUrl+'api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
         card.chartObject.loading = true;
             $http.get(url,{withCredentials: true, params : {
                 j_username: "portal", j_password: "Portal123"
