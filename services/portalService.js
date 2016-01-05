@@ -181,9 +181,9 @@ angular.module("hmisPortal")
                         } else if (chart == 'map') {
                             console.log(dataToUse);
                             if (self.orgUnitId == "m0frOspS7JY") {
-                                self.drawMap(this.orgUnitId,2,cardObject,dataToUse);
+                                self.drawMap(self.orgUnitId,2,cardObject,dataToUse);
                             } else {
-                                self.drawMap(this.orgUnitId, 3, cardObject,dataToUse);
+                                self.drawMap(self.orgUnitId, 3, cardObject,dataToUse);
                             }
                         }
                         else {

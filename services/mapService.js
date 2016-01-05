@@ -331,8 +331,8 @@ angular.module("hmisPortal")
                     return false;
                 }
 
-                legend[0].members= i;
-                classfy = legend[0];
+//                legend[0].members= i;
+//                classfy = legend[0];
             }else{
 
                 return false;

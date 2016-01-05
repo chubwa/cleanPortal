@@ -20,7 +20,7 @@ angular.module("hmisPortal")
         $scope.data = {};
         var map = this;
         $rootScope.periodType = 'years';
-        portalService.orgUnitId = $rootScope.selectedOrgUnit;
+        portalService.orgUnitId = $rootScope.selectedOrgUnit;console.log($rootScope.selectedOrgUnit);
         portalService.period = $rootScope.selectedPeriod;
         $scope.selectedOrgUnitLevel = "2";
 
@@ -110,7 +110,7 @@ angular.module("hmisPortal")
                 card.chart = type;
                 $scope.data.chartType = type;
             }
-            portalService.orgUnitId = $rootScope.selectedOrgUnit;
+            portalService.orgUnitId = $rootScope.selectedOrgUnit;console.log($rootScope.selectedOrgUnit);
             portalService.period = $rootScope.selectedPeriod;
             portalService.prepareSeries(card,$scope.data.chartType);
         };
@@ -196,30 +196,16 @@ angular.module("hmisPortal")
 
 
         $rootScope.firstClick = function(){
-            portalService.orgUnitId = $rootScope.selectedOrgUnit;
+            portalService.orgUnitId = $rootScope.selectedOrgUnit;console.log($rootScope.selectedOrgUnit);
             portalService.period = $rootScope.selectedPeriod;
             angular.forEach($scope.cards.malaria,function(value){
-//              $scope.data.chartType = value.chart;
                 portalService.prepareSeries(value,value.chart);
             });
             $scope.lastCard();
         }
         $scope.firstClick();
 
-//
-//
-//
-//        /**
-//         *
-//         * DRAW MAP
-//         * */
-//        map.drawMap = function(parentUid,level,card){
-//
-//            if(card.chart==="map"){
-//                mapService.renderMap(parentUid,level,card);
-//            }
-//
-//        }
+
 
 
     })
