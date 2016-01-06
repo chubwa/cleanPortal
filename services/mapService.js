@@ -93,7 +93,8 @@ angular.module("hmisPortal")
                     return color;
                 }
 
-                function formatText(orgunitObject){
+                function formatText(orgunitObject,featureId){
+                    console.log(featureId);
                     console.log(orgunitObject);
 //                    var textArray = orgunitname.split(" ");
                     return "";
@@ -113,7 +114,7 @@ angular.module("hmisPortal")
                             textAlign: 'center',
                             textBaseline: 'middle',
                             font: 'Arial',
-                            text: formatText(valueTouseArray),//districtProperties[feature.getId()],
+                            text: formatText(valueTouseArray,feature.getId()),//districtProperties[feature.getId()],
                             fill: new ol.style.Fill({color: "#000000"}),
                             //stroke: new ol.style.Stroke({color: "#000000", width: 0}),
                             offsetX: 0,
