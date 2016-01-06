@@ -13,7 +13,9 @@ angular.module("hmisPortal")
         var url = baseUrl+'api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
 //        var url = "/organisationUnits.geojson";
         card.chartObject.loading = true;
-            $http.get(url,{withCredentials: true, params : {
+            $http.get(url
+                ,
+                {withCredentials: true, params : {
                 j_username: "portal", j_password: "Portal123"
                 }
                 }
@@ -41,18 +43,7 @@ angular.module("hmisPortal")
                         name:value.properties.name,
                         "color":appropiateColor.color,
                         "facility":Math.floor(Math.random() * 256),
-                        "anc_12":0,
-                        "anc_fisrt":0,
-                        "inst":0,
-                        "post":0,
-                        "measle":0,
-                        "penta3":0,
-                        "vitaminA":0,
-                        "child":0,
-                        "cervical":0,
-                        "doctor":0,
-                        "nurse":0,
-                        "complete":0
+                        indicatorValue:max_and_min[2][index].value
 
                     };
 
@@ -104,9 +95,6 @@ angular.module("hmisPortal")
                             theText = values.value;
                         }
                     });
-//                    console.log(orgunitObject);
-//                    var textArray = orgunitname.split(" ");
-//                    var theText = "";
                     return theText;
                 }
 
@@ -183,6 +171,41 @@ angular.module("hmisPortal")
                         position: [100, -100]
                     });
                     var overlayHidden = true;
+                    // Mouse click function, called from the Leaflet Map Events
+                    $scope.$on('openlayers.layers.geojson.mousemove', function(event, feature, olEvent) {
+                        $scope.$apply(function(scope) {
+
+                            card.selectedDistrictHover = feature ? card.districts[feature.getId()] : '';
+                        });
+
+                        if (feature) {
+                            feature.setStyle(olHelpers.createStyle({
+                                fill: {
+                                    color: getColor(card.districts[feature.getId()])
+                                },
+                                stroke: {
+                                    color: '#00796B',
+                                    width:2
+
+                                },text:  new ol.style.Text({
+                                    textAlign: 'center',
+                                    textBaseline: 'middle',
+                                    font: 'Arial',
+                                    text: formatText(valueTouseArray,feature.getId()),//districtProperties[feature.getId()],
+                                    fill: new ol.style.Fill({color: "#00796B"}),
+                                    //stroke: new ol.style.Stroke({color: "#000000", width: 0}),
+                                    offsetX: 0,
+                                    offsetY: 0,
+                                    rotation: 0
+                                })
+                            }));
+                            if (previousFeature && feature !== previousFeature) {
+                                previousFeature.setStyle(getStyle(previousFeature));
+                            }
+                            previousFeature = feature;
+                        }
+                    });
+
                 });
 
                 card.closeTootip = function(){
@@ -539,4 +562,3 @@ angular.module("hmisPortal")
         };
         return shared;
     });
-    
