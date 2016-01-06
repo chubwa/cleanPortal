@@ -93,13 +93,14 @@ angular.module("hmisPortal")
                 } else {
                     url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-2;LEVEL-3;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }
-                $http.get(url, {'Content-Type': 'application/csv;charset=UTF-8'}).success(function (data) {
+                $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function (data) {
                     var a = document.createElement('a');
                     var blob = new Blob([data]);
                     a.href = window.URL.createObjectURL(blob);
                     a.download = "data.csv";
                     a.click();
-                });
+                }
+                );
             });
         };
         this.drawMap = function (baseUrl,orgUnit, level,card,cardtitle,valueTouseArray) {
@@ -125,6 +126,7 @@ angular.module("hmisPortal")
                 cardObject.chartObject.yAxis.title.text = cardObject.title.toLowerCase();
 
                 var url = '';
+//                var url = '/analytics.json';
                 if (self.orgUnitId == "m0frOspS7JY") {
                     url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-1;LEVEL-2;m0frOspS7JY&filter=pe:"+self.period+"&displayProperty=NAME";
                 } else {
@@ -194,7 +196,7 @@ angular.module("hmisPortal")
                             });
                             cardObject.chartObject.chart = {};
                             cardObject.chartObject.chart.type = chart;
-                            normalseries.push({type: chart, name: cardObject.title, data: serie})
+                            normalseries.push({type: chart, name: cardObject.title, data: serie});
                             cardObject.chartObject.series = normalseries;
                         }
 
