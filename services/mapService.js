@@ -291,10 +291,10 @@ angular.module("hmisPortal")
             }
 
             if(((max-min)/count)<1){
-                legends = [{set:mins+"",color:"#FF0000",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#DEBE0C",classfy:"medium",members:0},{set:((max+min)/2).toFixed(0)+" - "+(max),color:"#25E90F",classfy:"inter",members:0},{set:(max)+"+",color:"#2F8533",classfy:"max",members:0}];
+                legends = [{set:mins+"",color:"#FA090C",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#CED11B",classfy:"medium",members:0},{set:((max+min)/2).toFixed(0)+" - "+(max),color:"#3BCF41",classfy:"inter",members:0},{set:(max)+"+",color:"#229C27",classfy:"max",members:0}];
             }else{
                 var intervals = ((max-min)/count).toFixed(0);
-                legends = [{set:mins+"",color:"#FF0000",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#DEBE0C",classfy:"medium",members:0},{set:((max+min)/2).toFixed(0)+" - "+(max),color:"#25E90F",classfy:"inter",members:0},{set:(max)+"+",color:"#2F8533",classfy:"max",members:0}];
+                legends = [{set:mins+"",color:"#FA090C",classfy:"min",members:0},{set:min+" - "+((max+min)/2).toFixed(0),color:"#CED11B",classfy:"medium",members:0},{set:((max+min)/2).toFixed(0)+" - "+(max),color:"#3BCF41",classfy:"inter",members:0},{set:(max)+"+",color:"#229C27",classfy:"max",members:0}];
 
             }
             return legends;
