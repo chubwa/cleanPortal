@@ -92,6 +92,13 @@ angular.module("hmisPortal")
                     var color = districtProperties[district['district_id']].color;
                     return color;
                 }
+
+                function formatText(orgunitObject){
+                    console.log(orgunitObject);
+//                    var textArray = orgunitname.split(" ");
+                    return "";
+                }
+
                 var getStyle = function(feature){
                     var style = olHelpers.createStyle({
                         fill:{
@@ -101,7 +108,18 @@ angular.module("hmisPortal")
                         stroke:{
                             color:'#000000',
                             width:1
-                        }
+                        },
+                        text:  new ol.style.Text({
+                            textAlign: 'center',
+                            textBaseline: 'middle',
+                            font: 'Arial',
+                            text: formatText(districtProperties[feature.getId()]),
+                            fill: new ol.style.Fill({color: "#000000"}),
+                            //stroke: new ol.style.Stroke({color: "#000000", width: 0}),
+                            offsetX: 0,
+                            offsetY: 0,
+                            rotation: 0
+                        })
                     });
                     return [ style ];
                 }
