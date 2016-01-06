@@ -12,7 +12,7 @@ angular.module("hmisPortal")
         shared.facility =3029;
         var url = baseUrl+'api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
         card.chartObject.loading = true;
-            $http.get({withCredentials: true, params : {
+            $http.get(url,{withCredentials: true, params : {
                 j_username: "portal", j_password: "Portal123"
                 }
                 }
