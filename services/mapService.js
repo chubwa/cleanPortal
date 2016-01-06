@@ -92,7 +92,8 @@ angular.module("hmisPortal")
                     var theText = "";
                     angular.forEach(orgunitObject,function(values,index){
                         if(orgUnitId==values.id){
-                            theText = values.value;
+                            var names = values.name.split(" ");
+                            theText = names[0];
                         }
                     });
                     return theText;
