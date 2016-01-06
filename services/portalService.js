@@ -102,8 +102,8 @@ angular.module("hmisPortal")
                 });
             });
         };
-        this.drawMap = function (orgUnit, level,card,cardtitle,valueTouseArray) {
-            mapService.renderMap(self.base,orgUnit, level, card,cardtitle,valueTouseArray);
+        this.drawMap = function (baseUrl,orgUnit, level,card,cardtitle,valueTouseArray) {
+            mapService.renderMap(baseUrl,orgUnit, level, card,cardtitle,valueTouseArray);
 
         }
 
@@ -181,9 +181,9 @@ angular.module("hmisPortal")
                         } else if (chart == 'map') {
                             console.log(dataToUse);
                             if (self.orgUnitId == "m0frOspS7JY") {
-                                self.drawMap(self.orgUnitId,2,cardObject,dataToUse);
+                                self.drawMap(self.base,self.orgUnitId,2,cardObject,cardObject.title,dataToUse);
                             } else {
-                                self.drawMap(self.orgUnitId, 3, cardObject,dataToUse);
+                                self.drawMap(self.base,self.orgUnitId, 3, cardObject,cardObject.title,dataToUse);
                             }
                         }
                         else {

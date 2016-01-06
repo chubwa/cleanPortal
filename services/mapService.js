@@ -2,7 +2,7 @@ angular.module("hmisPortal")
 .service('mapService',['$rootScope','$http','olData','olHelpers','shared',function($scope,$http,olData,olHelpers,shared){
 
     var map = this;
-    map.renderMap = function(baseUrl,parentUid,level,card,valueTouseArray){
+    map.renderMap = function(baseUrl,parentUid,level,card,cardtitle,valueTouseArray){
         localStorage.clear();
         var cardseries = removeDuplicatesInSeries( card.chartObject.series );
         var max_and_min = getMaxAndMin(cardseries);
@@ -12,10 +12,11 @@ angular.module("hmisPortal")
         shared.facility =3029;
         var url = baseUrl+'api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
         card.chartObject.loading = true;
-            $http.get(url,{withCredentials: true, params : {
+            $http.get({withCredentials: true, params : {
                 j_username: "portal", j_password: "Portal123"
-            }
-            }).success(
+                }
+                }
+            ).success(
             function(data) {
                 card.chartObject.loading = false;
                 var TotalGeo = {
@@ -338,28 +339,6 @@ angular.module("hmisPortal")
                     return false;
                 }
 
-
-//
-//                if(valueL.value!=0&&valueL.value>=max_and_min[0]){
-//
-//                    legend[2].members=legend[2].members+1;
-//                    classfy = legend[2];
-//                    return false;
-//                }else
-//                if(valueL.value!=0&&valueL.value<=((max_and_min[1]+max_and_min[0])/2)&&valueL.value>max_and_min[1]){
-//
-//                    legend[1].members=legend[1].members+1;
-//                    classfy = legend[1];
-//                    return false;
-//                }else
-//                if(valueL.value==0||valueL.value<=max_and_min[1]){
-//                    legend[0].members=legend[0].members+1;
-//                    classfy = legend[0];
-//                    return false;
-//                }
-
-//                legend[0].members= i;
-//                classfy = legend[0];
             }else{
 
                 return false;
