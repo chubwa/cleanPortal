@@ -113,7 +113,7 @@ angular.module("hmisPortal")
                             textAlign: 'center',
                             textBaseline: 'middle',
                             font: 'Arial',
-                            text: formatText(districtProperties[feature.getId()]),
+                            text: formatText(cardseries),//districtProperties[feature.getId()],
                             fill: new ol.style.Fill({color: "#000000"}),
                             //stroke: new ol.style.Stroke({color: "#000000", width: 0}),
                             offsetX: 0,
