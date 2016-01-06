@@ -95,9 +95,17 @@ angular.module("hmisPortal")
 
                 function formatText(orgunitObject,featureId){
                     console.log(featureId);
+                    var textArray = featureId.split("_");
+                    var orgUnitId = textArray[1];
+                    var theText = "";
+                    angular.forEach(orgunitObject,function(values,index){
+                        if(orgUnitId==values.id){
+                            theText = values.value;
+                        }
+                    });
                     console.log(orgunitObject);
 //                    var textArray = orgunitname.split(" ");
-                    return "";
+                    return theText;
                 }
 
                 var getStyle = function(feature){
