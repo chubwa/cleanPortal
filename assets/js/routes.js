@@ -101,6 +101,54 @@ angular.module("hmisPortal")
             templateUrl: 'views/planning.html',
             controller: 'planningCtrl'
         });
+        $routeProvider.when("/mortalities",{
+            templateUrl: 'views/mortalities.html',
+            controller: 'mortalitiesCtrl'
+        });
+        $routeProvider.when("/familyPlaning",{
+            templateUrl: 'views/familyPlaning.html',
+            controller: 'familyPlaningCtrl'
+        });
+        $routeProvider.when("/fpIntegration",{
+            templateUrl: 'views/fpIntegration.html',
+            controller: 'fpIntegrationCtrl'
+        });
+        $routeProvider.when("/antenatalCare",{
+            templateUrl: 'views/antenatalCare.html',
+            controller: 'antenatalCareCtrl'
+        });
+        $routeProvider.when("/ancIntegration",{
+            templateUrl: 'views/ancIntegration.html',
+            controller: 'ancIntegrationCtrl'
+        });
+        $routeProvider.when("/laborDelivery",{
+            templateUrl: 'views/laborDelivery.html',
+            controller: 'laborDeliveryCtrl'
+        });
+        $routeProvider.when("/ldIntegration",{
+            templateUrl: 'views/ldIntegration.html',
+            controller: 'ldIntegrationCtrl'
+        });
+        $routeProvider.when("/newbornCare",{
+            templateUrl: 'views/newbornCare.html',
+            controller: 'newbornCareCtrl'
+        });
+        $routeProvider.when("/postnal",{
+            templateUrl: 'views/postnal.html',
+            controller: 'postnalCtrl'
+        });
+        $routeProvider.when("/pncIntegration",{
+            templateUrl: 'views/pncIntegration.html',
+            controller: 'pncIntegrationCtrl'
+        });
+        $routeProvider.when("/gbvVac",{
+            templateUrl: 'views/gbvVac.html',
+            controller: 'gbvVacCtrl'
+        });
+        $routeProvider.when("/cervicalCancer",{
+            templateUrl: 'views/cervicalCancer.html',
+            controller: 'cervicalCancerCtrl'
+        });
 
         $routeProvider.otherwise({
             redirectTo: '/home'
