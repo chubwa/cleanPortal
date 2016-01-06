@@ -105,6 +105,7 @@ angular.module("hmisPortal")
                     });
                     console.log(orgunitObject);
 //                    var textArray = orgunitname.split(" ");
+                    var theText = "";
                     return theText;
                 }
 
