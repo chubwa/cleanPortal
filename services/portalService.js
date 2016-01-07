@@ -2,7 +2,7 @@
  * Created by kelvin on 11/16/15.
  */
 angular.module("hmisPortal")
-   .service('portalService',function($http,mapService) {
+   .service('portalService',function($http,$resource,mapService) {
 
         var self = this;
         //initializing shared data
@@ -135,6 +135,7 @@ angular.module("hmisPortal")
                 }
                 cardObject.chartObject.loading = true;
                 $http.get(url).success(function (data) {
+
                     var area = [];
                     cardObject.chartObject.xAxis.categories = [];
                     //
