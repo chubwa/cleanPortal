@@ -12,6 +12,7 @@ angular.module("hmisPortal")
         this.orgUnitName = '';
         this.numerator='';
         this.denominator='';
+        this.indicatorType='';
         this.base = "http://139.162.204.124/dhis/";
         this.icons = [
             {name: 'table', image: 'table.jpg', action: ''},
@@ -140,6 +141,7 @@ angular.module("hmisPortal")
                     var indicatorApi=
                         $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
                         var indicatorResult=indicatorApi.get(function(indicatorObject){
+                            cardObject.indicatorType=indicatorObject.indicatorType.name;
                             var expApi=
                             $resource('http://139.162.204.124/dhis/api/expressions/description',{get:{method:"JSONP"}});
                              var numeratorExp=expApi.get({expression:indicatorObject.numerator},function(numeratorText){

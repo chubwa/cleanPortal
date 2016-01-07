@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliozaliwa Hai Uzito <2.5Kg',
                 description:'Maelezo ya Waliozaliwa Hai Uzito <2.5Kg',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliozaliwa Hai Uzito >=2.5Kg',
                 description:'Maelezo ya Waliozaliwa Hai Uzito >=2.5Kg',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliozaliwa Hai',
                 description:'Maelezo ya Watoto Waliozaliwa Hai',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Walionyonyeshwa Saa Moja Baada Ya Kuzaliwa',
                 description:'Watoto Walionyonyeshwa Saa Moja Baada Ya Kuzaliwa',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliosaidiwa Kupumua - Bag And Mask',
                 description:'Watoto Waliosaidiwa Kupumua - Bag And Mask',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -97,6 +102,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliosaidiwa Kupumua - Simulation',
                 description:'Watoto Waliosaidiwa Kupumua - Simulation',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -110,6 +116,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliosaidiwa Kupumua - Suction',
                 description:'Watoto Waliosaidiwa Kupumua - Suction',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -123,6 +130,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliozaliwa Nyumbani na Kuanzishiwa KMC',
                 description:'Watoto Waliozaliwa Nyumbani na Kuanzishiwa KMC',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -136,6 +144,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliozaliwa Nyumbani na Uzito <2.5Kg',
                 description:'Watoto Waliozaliwa Nyumbani na Uzito <2.5Kg',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -149,6 +158,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliozaliwa na Uzito <2.5Kg Wakapatiwa KMC',
                 description:'Watoto Waliozaliwa na Uzito <2.5Kg Wakapatiwa KMC',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -162,6 +172,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Wenye Upungufu wa Damu (Hb < 10 g/dl au Viganja Vyeupe Sana',
                 description:'Watoto Wenye Upungufu wa Damu (Hb < 10 g/dl au Viganja Vyeupe Sana',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -175,6 +186,7 @@ angular.module("hmisPortal")
             {
                 title:'PNC watoto wenye jaundice',
                 description:'PNC watoto wenye jaundice',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -188,6 +200,7 @@ angular.module("hmisPortal")
             {
                 title:'Vifo vya Watoto Wachanga Waliozaliwa Nyumbani (Perinatal)  Neonatal',
                 description:'Vifo vya Watoto Wachanga Waliozaliwa Nyumbani (Perinatal)  Neonatal',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -201,6 +214,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliopewa ARV Katika PNC',
                 description:'Watoto Waliopewa ARV Katika PNC',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -214,6 +228,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Wenye Uambukizo Kwenye  Ngozi',
                 description:'Watoto Wenye Uambukizo Kwenye  Ngozi',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -227,6 +242,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Wenye Uambukizo Kwenye Kitovu',
                 description:'Watoto Wenye Uambukizo Kwenye Kitovu',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -240,6 +256,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Wenye Uambukizo Mkali (Septicaemia)',
                 description:'Watoto Wenye Uambukizo Mkali (Septicaemia)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -253,6 +270,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliohudhuria Mahudhurio Yote Postnatal',
                 description:'Watoto Waliohudhuria Mahudhurio Yote Postnatal',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -266,6 +284,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata rufaa kwenda CTC kutoka L&D',
                 description:'Waliopata rufaa kwenda CTC kutoka L&D',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -279,6 +298,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliohudhuria PNC Kati ya Siku ya 2-7',
                 description:'Watoto Waliohudhuria PNC Kati ya Siku ya 2-7',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -292,6 +312,7 @@ angular.module("hmisPortal")
             {
                 title:'Mapacha Waliozaliwa Wakafa (FSB)',
                 description:'Mapacha Waliozaliwa Wakafa (FSB)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -305,6 +326,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliozaliwa Wakafa (FSB)',
                 description:'Waliozaliwa Wakafa (FSB)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -318,6 +340,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliozaliwa Wafu (Msb)',
                 description:'Waliozaliwa Wafu (Msb)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -331,6 +354,7 @@ angular.module("hmisPortal")
             {
                 title:'Mapacha Waliozaliwa Wafu (MSB)',
                 description:'Mapacha Waliozaliwa Wafu (MSB)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -344,6 +368,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliohudhuria PNC Ndani ya Saa 24',
                 description:'Watoto Waliohudhuria PNC Ndani ya Saa 24',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -357,6 +382,7 @@ angular.module("hmisPortal")
             {
                 title:'Mapacha Waliozaliwa Hai Uzito <2.5Kg',
                 description:'Mapacha Waliozaliwa Hai Uzito <2.5Kg',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -370,6 +396,7 @@ angular.module("hmisPortal")
             {
                 title:'Mapacha Waliozaliwa Hai Uzito >=2.5Kg',
                 description:'Mapacha Waliozaliwa Hai Uzito >=2.5Kg',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -383,6 +410,7 @@ angular.module("hmisPortal")
             {
                 title:'Mapacha Wenye APGAR Score Chini ya 7 Katika Dakika 5',
                 description:'Mapacha Wenye APGAR Score Chini ya 7 Katika Dakika 5',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -396,6 +424,7 @@ angular.module("hmisPortal")
             {
                 title:'Mama na Mtoto Waliopewa Rufaa',
                 description:'Mama na Mtoto Waliopewa Rufaa',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -409,6 +438,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto Waliosaidiwa Kupumua - Bag And Mask',
                 description:'Watoto Waliosaidiwa Kupumua - Bag And Mask',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -422,6 +452,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto mapacha waliosaidiwa kupumua  - suction',
                 description:'Watoto mapacha waliosaidiwa kupumua  - suction',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -435,6 +466,7 @@ angular.module("hmisPortal")
             {
                 title:'Watoto mapacha waliosaidiwa kupumua - simulation',
                 description:'Watoto mapacha waliosaidiwa kupumua - simulation',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -448,6 +480,7 @@ angular.module("hmisPortal")
             {
                 title:'Birth Asphyxia',
                 description:'Birth Asphyxia',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -461,6 +494,7 @@ angular.module("hmisPortal")
             {
                 title:'Low Birth Weight And Prematurity Complication',
                 description:'Low Birth Weight And Prematurity Complication',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

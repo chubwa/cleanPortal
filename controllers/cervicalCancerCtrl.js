@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'Clients who received VIA screening',
                 description:'Maelezo ya Clients who received VIA screening',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'Clients with Positive VIA results',
                 description:'Maelezo ya Clients with Positive VIA results',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'Clients with VIA positive results treated with cryotherapy on the same day',
                 description:'Clients with VIA positive results treated with cryotherapy on the same day',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'Total number of VIA+ clients receiving cryotherapy',
                 description:'Total number of VIA+ clients receiving cryotherapy',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'Women with positive VIA results referred for suspect with cancer',
                 description:'Women with positive VIA results referred for suspect with cancer',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -97,6 +102,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopewa Huduma ya Cryotherapy',
                 description:'Waliopewa Huduma ya Cryotherapy',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -110,6 +116,7 @@ angular.module("hmisPortal")
             {
                 title:'Number of clients with LEEP treatment performed',
                 description:'Number of clients with LEEP treatment performed',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -123,6 +130,7 @@ angular.module("hmisPortal")
             {
                 title:'Number of post-treatment complications (cryotherapy or LEEP)',
                 description:'Number of post-treatment complications (cryotherapy or LEEP)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -136,6 +144,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliodhaniwa Kuwa na Saratani ya Shingo ya Mfuko wa Kizazi wakati wa FP',
                 description:'Waliodhaniwa Kuwa na Saratani ya Shingo ya Mfuko wa Kizazi wakati wa FP',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

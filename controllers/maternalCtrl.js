@@ -28,6 +28,7 @@ angular.module("hmisPortal")
         $scope.cards.malaria = [{
             title:'Antenatal Care Coverage',
             description:'Antenatal Care Coverage',
+            indicatorType:portalService.indicatorType,
             numerator:portalService.numerator,
             denominator:portalService.denominator,
             cardClass:"col s12 m6",
@@ -42,6 +43,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC 4th Visit Coverage',
                 description:'ANC 4th Visit Coverage',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -57,6 +59,7 @@ angular.module("hmisPortal")
             {
                 title:' ANC 1st Visit before 12 weeks rate',
                 description:' ANC 1st Visit before 12 weeks rate',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -71,6 +74,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC De- worming rate',
                 description:'ANC De- worming rate',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -85,6 +89,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC Syphilis prevelance',
                 description:'ANC Syphilis prevelance',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -99,6 +104,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC Coverage for women under 20 years',
                 description:'ANC Coverage for women under 20 years',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -113,6 +119,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC HIV Prevelance ( 15 - 24)',
                 description:'ANC HIV Prevelance ( 15 - 24)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -127,6 +134,7 @@ angular.module("hmisPortal")
             {
                 title:'Health Facility Delivery Rate',
                 description:'Health Facility Delivery Rate',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -141,6 +149,7 @@ angular.module("hmisPortal")
             {
                 title:'Contraceptive  prevalence rate',
                 description:'Contraceptive  prevalence rate',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -155,6 +164,7 @@ angular.module("hmisPortal")
             {
                 title:'Deliveries by skilled attendants',
                 description:'Deliveries by skilled attendants',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC IPT2 COVERAGE',
                 description:'Maelezo ya ANC IPT2 COVERAGE',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC MALARIA PREVELANCE',
                 description:'Maelezo ya ANC MALARIA PREVELANCE',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC Proportion  of pregnant women receiving ITN Voucher',
                 description:'Maelezo ya ANC Proportion  of pregnant women receiving ITN Voucher',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'Proportional of Malaria cases in OPD',
                 description:'Proportional of Malaria cases in OPD',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'Proportional of Malaria cases in IPD',
                 description:'Proportional of Malaria cases in OPD',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -97,6 +102,7 @@ angular.module("hmisPortal")
             {
                 title:'Proportional of Malaria cases in IPD',
                 description:'Proportional of Malaria cases in OPD',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

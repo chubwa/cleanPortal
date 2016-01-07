@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'Kufunga uzazi mama ML/LA',
                 description:'Maelezo ya Kufunga uzazi mama ML/LA',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'Wateja wa Vidonge CBD',
                 description:'Maelezo ya Wateja wa Vidonge CBD',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'Wateja wa Vidonge Kituoni',
                 description:'Maelezo ya Wateja wa Vidonge Kituoni',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'Kuweka Kitanzi IUCD"',
                 description:'Kuweka Kitanzi IUCD',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'Wateja waliochukua  kondom Kituoni',
                 description:'Wateja waliochukua  kondom Kituoni',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -96,6 +101,7 @@ angular.module("hmisPortal")
             },{
                 title:'Kufunga uzazi baba NSV',
                 description:'Kufunga uzazi baba NSV',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -108,6 +114,7 @@ angular.module("hmisPortal")
             },{
                 title:'Wateja wa sindano',
                 description:'Wateja wa sindano',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -120,6 +127,7 @@ angular.module("hmisPortal")
             },{
                 title:'Njia ya dharura ya uzazi wa mpango',
                 description:'Njia ya dharura ya uzazi wa mpango',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -132,6 +140,7 @@ angular.module("hmisPortal")
             },{
                 title:'Kuweka vipandikizi',
                 description:'Kuweka vipandikizi',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -144,6 +153,7 @@ angular.module("hmisPortal")
             },{
                 title:'Wateja waliochukua kondom CBD',
                 description:'Wateja waliochukua kondom CBD',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

@@ -31,6 +31,7 @@ angular.module("hmisPortal")
         $scope.cards.malaria = [{
             title:'Vitamin A coverage under 5 years',
             description:'Vitamin A coverage under 5 years',
+            indicatorType:portalService.indicatorType,
             numerator:portalService.numerator,
             denominator:portalService.denominator,
             cardClass:"col s12 m6",

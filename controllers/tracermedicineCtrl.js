@@ -62,6 +62,9 @@ angular.module("hmisPortal")
         $scope.cards.malaria = [{
             title:'Total Tracers available',
             description:'Total Tracers available',
+            indicatorType:" ",
+            numerator:" ",
+            denominator:" ",
             cardClass:"col s12 m12",
             data:'PlatsD7r6BI',
             icons:[
@@ -115,6 +118,9 @@ angular.module("hmisPortal")
             {
                 title:'Normal saline Availability',
                 description:'Normal saline Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'Y6gfcTiQcis',
@@ -169,6 +175,9 @@ angular.module("hmisPortal")
             {
                 title:'Disposable Syringe Availability',
                 description:'Disposable Syringe Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'sZYr1CWDW8Y',
                 icons:[
@@ -222,6 +231,9 @@ angular.module("hmisPortal")
             {
                 title:'Depo-Prover Availability',
                 description:'Depo-Prover Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'TFORL9LBEDP',
                 icons:[
@@ -275,6 +287,9 @@ angular.module("hmisPortal")
             {
                 title:'Oral Rehydration Availability',
                 description:'Oral Rehydration Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'Y0HAPpe3X8A',
                 icons:[
@@ -328,6 +343,9 @@ angular.module("hmisPortal")
             {
                 title:'Penta Valent Availability',
                 description:'Penta Valent Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m12 s12",
                 data:'BRS6sUj8FJa',
                 icons:[
@@ -381,6 +399,9 @@ angular.module("hmisPortal")
             {
                 title:'Albendazole Availability',
                 description:'Albendazole Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'AHcdWDFaeZi',
                 icons:[
@@ -434,6 +455,9 @@ angular.module("hmisPortal")
             {
                 title:'Ergometrine Availability',
                 description:'Ergometrine Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'EX233CR1k1T',
                 icons:[
@@ -487,6 +511,9 @@ angular.module("hmisPortal")
             {
                 title:'Amoxycillin Availability',
                 description:'Amoxycillin Availability',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'KxS8b24bAZC',
                 icons:[
@@ -540,6 +567,9 @@ angular.module("hmisPortal")
             {
                 title:'Artemether / Lumefantrine Oral Available',
                 description:'Artemether / Lumefantrine Oral Available',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'wjGjt5bacv6',
                 icons:[
@@ -594,6 +624,9 @@ angular.module("hmisPortal")
             {
                 title:'Mean number of Tracers available By Quarter',
                 description:'Mean number of Tracers available By Quarter',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m12 s12",
                 data:'YKtXjwwuFA3',
                 icons:[
@@ -648,6 +681,9 @@ angular.module("hmisPortal")
             {
                 title:'Mean Parastatal Facility Tracers available By Quarter',
                 description:'Mean Parastatal Facility Tracers available By Quarter',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'UCmAgEwrtnL',
                 icons:[
@@ -702,6 +738,9 @@ angular.module("hmisPortal")
             {
                 title:'Mean FBO Facility Tracers available By Quarter',
                 description:'Mean FBO Facility Tracers available By Quarter',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'eRGYpbsCTjL',
                 icons:[
@@ -756,6 +795,9 @@ angular.module("hmisPortal")
             {
                 title:'Mean Public Facility Tracers available By Quarter',
                 description:'Mean Public Facility Tracers available By Quarter',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'GfA6IHXRUyb',
                 icons:[
@@ -810,6 +852,9 @@ angular.module("hmisPortal")
             {
                 title:'Mean Private Facility Tracers available By Quarter',
                 description:'Mean Private Facility Tracers available By Quarter',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'TJKlz62awvr',
                 icons:[
@@ -945,6 +990,19 @@ angular.module("hmisPortal")
                 }
 
                 $http.get($scope.url).success(function(data){
+                    var indicatorApi=
+                        $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
+                    var indicatorResult=indicatorApi.get(function(indicatorObject){
+                         cardObject.indicatorType=indicatorObject.indicatorType.name;
+                        var expApi=
+                            $resource('http://139.162.204.124/dhis/api/expressions/description',{get:{method:"JSONP"}});
+                        var numeratorExp=expApi.get({expression:indicatorObject.numerator},function(numeratorText){
+                            cardObject.numerator=numeratorText.description;
+                        });
+                        var denominator=expApi.get({expression:indicatorObject.denominator},function(denominatorText){
+                            cardObject.denominator=denominatorText.description;
+                        });
+                    });
                     $scope.area = [];
                     cardObject.chartObject.xAxis.categories = [];
                     //

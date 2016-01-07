@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata njia nyingine za uzazi wa mpango siku 42 baada ya kujifungua',
                 description:'Maelezo ya Waliopata njia nyingine za uzazi wa mpango siku 42 baada ya kujifungua',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'Huduma ya Implanon baada ya mimba kuharibika',
                 description:'Maelezo ya Huduma ya Implanon baada ya mimba kuharibika',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Huduma ya FP Baada ya Mimba Kuharibika',
                 description:'Maelezo ya Waliopata Huduma ya FP Baada ya Mimba Kuharibika',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Njia za Uzazi wa Mpango Siku 42 Baada ya Kujifungua',
                 description:'Waliopata Njia za Uzazi wa Mpango Siku 42 Baada ya Kujifungua',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Njia za Uzazi wa Mpango Baada ya Mimba Kuharibika',
                 description:'Waliopata Njia za Uzazi wa Mpango Baada ya Mimba Kuharibika',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -97,6 +102,7 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Implanon siku 42 baada ya kujifungua',
                 description:'Waliopata Implanon siku 42 baada ya kujifungua',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -110,6 +116,7 @@ angular.module("hmisPortal")
             {
                 title:'Huduma nyingine za uzazi wa mpango baada ya mimba kuharibika',
                 description:'Huduma nyingine za uzazi wa mpango baada ya mimba kuharibika',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

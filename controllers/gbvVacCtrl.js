@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya wateja wote',
                 description:'GBV Idadi ya wateja wote',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya wateja wapya',
                 description:'GBV Idadi ya wateja wapya',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya wateja waliokuja kwa ufuatiliaji (Follow up visit)',
                 description:'GBV Idadi ya wateja waliokuja kwa ufuatiliaji (Follow up visit)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Wateja Waliofanyiwa unasihi (Counseling)',
                 description:'GBV Wateja Waliofanyiwa unasihi (Counseling)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya waliopatwa na ukatili wa kimwili (Physical Violence)',
                 description:'GBV Idadi ya waliopatwa na ukatili wa kimwili (Physical Violence)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -97,6 +102,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya waliopatwa na ukatili wa kingono (Sexual Violence)',
                 description:'GBV Idadi ya waliopatwa na ukatili wa kingono (Sexual Violence)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -110,6 +116,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya waliopatwa na ukatili wa kihisia (Emotional Violence)',
                 description:'GBV Idadi ya waliopatwa na ukatili wa kihisia (Emotional Violence)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -123,6 +130,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya watoto waliotelekezwa (Neglect)',
                 description:'GBV Idadi ya watoto waliotelekezwa (Neglect)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -136,6 +144,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya waliopata ukatili kwa kulawitiwa',
                 description:'GBV Idadi ya waliopata ukatili kwa kulawitiwa',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -149,6 +158,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Idadi ya waliofika kituoni ndani ya saa 72 baada ya tukio',
                 description:'GBV Idadi ya waliofika kituoni ndani ya saa 72 baada ya tukio',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -162,6 +172,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Walipimwa Virusi vya UKIMWI (HIV testing)',
                 description:'GBV Walipimwa Virusi vya UKIMWI (HIV testing)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -175,6 +186,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Waliopewa njia ya uzazi wa mpango wa dharura (Emergency Contraceptive)',
                 description:'GBV Waliopewa njia ya uzazi wa mpango wa dharura (Emergency Contraceptive)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -188,6 +200,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Wateja waliopata rufaa kutoka nje ya kituo',
                 description:'GBV Wateja waliopata rufaa kutoka nje ya kituo',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -201,6 +214,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Waliopewa matibabu ya kinga (Post Exposure Prophylaxis)',
                 description:'GBV Waliopewa matibabu ya kinga (Post Exposure Prophylaxis)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -214,6 +228,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Wateja waliopata rufaa kwenda nje ya kituo',
                 description:'GBV Wateja waliopata rufaa kwenda nje ya kituo',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -227,6 +242,7 @@ angular.module("hmisPortal")
             {
                 title:'GBV Wateja waliopata rufaa ndani ya kituo',
                 description:'GBV Wateja waliopata rufaa ndani ya kituo',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

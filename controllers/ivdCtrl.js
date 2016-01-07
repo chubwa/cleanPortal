@@ -58,6 +58,9 @@ angular.module("hmisPortal")
             {
                 title:'Measles vaccination  coverage to children under 1 year',
                 description:'Maelezo ya Measles vaccination  coverage to children under 1 year',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m12 s12",
                 cardSize:"medium",
                 data:'c29EE9nH8gQ',
@@ -112,6 +115,9 @@ angular.module("hmisPortal")
             {
                 title:'ANC Proportion of pregnant women receiving TT2+',
                 description:'Maelezo ya ANC Proportion of pregnant women receiving TT2+',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'DHP2lGgo4kH',
                 icons:[
@@ -165,6 +171,9 @@ angular.module("hmisPortal")
             {
                 title:'PENTA 3 Vaccination coverage to children under 1 year',
                 description:'Maelezo ya PENTA 3 Vaccination coverage to children under 1 year',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
                 cardClass:"col m6 s12",
                 data:'WhsP7nsuwnz',
                 icons:[
@@ -314,6 +323,19 @@ angular.module("hmisPortal")
                 }
 
                 $http.get($scope.url).success(function(data){
+                    var indicatorApi=
+                        $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
+                    var indicatorResult=indicatorApi.get(function(indicatorObject) {
+                        cardObject.indicatorType = indicatorObject.indicatorType.name;
+                        var expApi =
+                            $resource('http://139.162.204.124/dhis/api/expressions/description', {get: {method: "JSONP"}});
+                        var numeratorExp = expApi.get({expression: indicatorObject.numerator}, function (numeratorText) {
+                            cardObject.numerator = numeratorText.description;
+                        });
+                        var denominator = expApi.get({expression: indicatorObject.denominator}, function (denominatorText) {
+                            cardObject.denominator = denominatorText.description;
+                        });
+                    });
                     $scope.area = [];
                     cardObject.chartObject.xAxis.categories = [];
                     //

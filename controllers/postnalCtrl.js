@@ -28,6 +28,7 @@ angular.module("hmisPortal")
             {
                 title:'Postnatal Wenye Upungufu Mkubwa wa Damu (Hb < 8.5 g/dl)',
                 description:'Maelezo ya Postnatal Wenye Upungufu Mkubwa wa Damu (Hb < 8.5 g/dl)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col s12 m6",
@@ -41,6 +42,7 @@ angular.module("hmisPortal")
             {
                 title:'Postnatal Waliojifungua kwa Wakunga wa Jadi (TBA) na Kuhudhuria Huduma Baada ya Kujifungua',
                 description:'Postnatal Waliojifungua kwa Wakunga wa Jadi (TBA) na Kuhudhuria Huduma Baada ya Kujifungua',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -56,6 +58,7 @@ angular.module("hmisPortal")
             {
                 title:'Postnatal Waliojifungulia Nje ya Kituo (BBA)',
                 description:'Maelezo ya Postnatal Waliojifungulia Nje ya Kituo (BBA)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m12 s12",
@@ -70,6 +73,7 @@ angular.module("hmisPortal")
             {
                 title:'Postnatal Waliojifungulia Nyumbani',
                 description:'Postnatal Waliojifungulia Nyumbani',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -84,6 +88,7 @@ angular.module("hmisPortal")
             {
                 title:'Mama waliohudhuria postanatal  kati ya siku ya 2-7',
                 description:'Mama waliohudhuria postanatal  kati ya siku ya 2-7',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -97,6 +102,7 @@ angular.module("hmisPortal")
             {
                 title:'Postnatal Waliohudhuria Huduma Baada ya Kujifungua Ndani ya Saa 48',
                 description:'Postnatal Waliohudhuria Huduma Baada ya Kujifungua Ndani ya Saa 48',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
@@ -110,6 +116,7 @@ angular.module("hmisPortal")
             {
                 title:'Postnatal Waliomaliza Mahudhurio Yote ya Huduma Baada ya Kujifungua',
                 description:'Postnatal Waliomaliza Mahudhurio Yote ya Huduma Baada ya Kujifungua',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",

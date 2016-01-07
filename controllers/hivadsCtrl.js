@@ -31,6 +31,7 @@ angular.module("hmisPortal")
         $scope.cards.malaria = [{
             title:'ANC HIV+ given ART rate',
             description:'ANC HIV+ given ART rate',
+            indicatorType:portalService.indicatorType,
             numerator:portalService.numerator,
             denominator:portalService.denominator,
             cardClass:"col s12 m6",
@@ -45,6 +46,7 @@ angular.module("hmisPortal")
             {
                 title:'ANC HIV testing rate(% of Pregnant women tested for HIV)',
                 description:'ANC HIV testing rate(% of Pregnant women tested for HIV)',
+                indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
                 cardClass:"col m6 s12",
