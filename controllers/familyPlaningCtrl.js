@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'Kufunga uzazi mama ML/LA',
                 description:'Maelezo ya Kufunga uzazi mama ML/LA',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'Aufg85b0HV3',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'Wateja wa Vidonge CBD',
                 description:'Maelezo ya Wateja wa Vidonge CBD',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'GWFza9xVa3F',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'Wateja wa Vidonge Kituoni',
                 description:'Maelezo ya Wateja wa Vidonge Kituoni',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'IFxhP0O4k0W',
                 icons:angular.copy(portalService.icons),
@@ -63,7 +69,9 @@ angular.module("hmisPortal")
             },
             {
                 title:'Kuweka Kitanzi IUCD"',
-                description:'Kuweka Kitanzi IUCD"',
+                description:'Kuweka Kitanzi IUCD',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'OQpasUg1Tse',
                 icons:angular.copy(portalService.icons),
@@ -76,6 +84,8 @@ angular.module("hmisPortal")
             {
                 title:'Wateja waliochukua  kondom Kituoni',
                 description:'Wateja waliochukua  kondom Kituoni',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'PHN05p61ByJ',
                 icons:angular.copy(portalService.icons),
@@ -86,6 +96,8 @@ angular.module("hmisPortal")
             },{
                 title:'Kufunga uzazi baba NSV',
                 description:'Kufunga uzazi baba NSV',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'btKkJROB2gP',
                 icons:angular.copy(portalService.icons),
@@ -96,6 +108,8 @@ angular.module("hmisPortal")
             },{
                 title:'Wateja wa sindano',
                 description:'Wateja wa sindano',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'epPM7fO8CnH',
                 icons:angular.copy(portalService.icons),
@@ -106,6 +120,8 @@ angular.module("hmisPortal")
             },{
                 title:'Njia ya dharura ya uzazi wa mpango',
                 description:'Njia ya dharura ya uzazi wa mpango',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'gq90zkgvcg3',
                 icons:angular.copy(portalService.icons),
@@ -116,6 +132,8 @@ angular.module("hmisPortal")
             },{
                 title:'Kuweka vipandikizi',
                 description:'Kuweka vipandikizi',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'pqpVKzE951Y',
                 icons:angular.copy(portalService.icons),
@@ -126,6 +144,8 @@ angular.module("hmisPortal")
             },{
                 title:'Wateja waliochukua kondom CBD',
                 description:'Wateja waliochukua kondom CBD',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'yAPwF74EoEe',
                 icons:angular.copy(portalService.icons),

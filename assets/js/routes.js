@@ -33,6 +33,10 @@ angular.module("hmisPortal")
             templateUrl: 'views/maternal.html',
             controller: 'maternalCtrl'
         });
+        $routeProvider.when("/hivads",{
+            templateUrl: 'views/hivads.html',
+            controller: 'hivadsCtrl'
+        });
 
         $routeProvider.when("/ivd",{
             templateUrl: 'views/ivd.html',

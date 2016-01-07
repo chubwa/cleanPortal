@@ -230,6 +230,7 @@
                             <highchart ng-if="!card.displayTable && !card.displayMap" config="card.chartObject"></highchart>
                         </div>
 
+
                         <div style="width: 100%" ng-if="card.displayMap">
                             <p ng-if="card.chartObject.loading" class="center"><img src="assets/img/loading.gif">Loading ....</p>
                             <openlayers ng-if="!card.chartObject.loading" ol-center="card.Africa" ol-defaults="card.defaults" custom-layers="true"  height="400px" >
@@ -249,6 +250,7 @@
                             </div>
 
                         </div>
+
 
                         <div style="width: 100%" ng-if="card.displayTable" >
                             <p ng-if="card.chartObject.loading" class="center"><img src="assets/img/loading.gif">Loading ....</p>
@@ -287,6 +289,6 @@
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
 </div>

@@ -9,7 +9,7 @@ angular.module("hmisPortal")
     .config(function($httpProvider) {
         $httpProvider.defaults.withCredentials = true;
     })
-    .controller("nutritionCtrl",function ($rootScope,$scope,$http,$location,$timeout,olData,olHelpers,shared,portalService) {
+    .controller("hivadsCtrl",function ($rootScope,$scope,$http,$location,$timeout,olData,olHelpers,shared,portalService) {
         //displaying loading during page change
         $rootScope.$on("$routeChangeStart",
             function (event, current, previous, rejection) {
@@ -29,19 +29,34 @@ angular.module("hmisPortal")
         $scope.selectedOrgUnitLevel = "2";
 
         $scope.cards.malaria = [{
-            title:'Vitamin A coverage under 5 years',
-            description:'Vitamin A coverage under 5 years',
+            title:'ANC HIV+ given ART rate',
+            description:'ANC HIV+ given ART rate',
             numerator:portalService.numerator,
             denominator:portalService.denominator,
             cardClass:"col s12 m6",
-            data:'vFDZba15wT9',
+            data:'K4Wu2DaROZR',
             icons:angular.copy(portalService.icons),
             displayTable:false,
             displayMap:false,
             chart:'bar',
             chartObject:angular.copy(portalService.chartObject)
 
-        }
+        },
+            {
+                title:'ANC HIV testing rate(% of Pregnant women tested for HIV)',
+                description:'ANC HIV testing rate(% of Pregnant women tested for HIV)',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                cardSize:"medium",
+                data:'bSGgVZvFfmH',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'line',
+                chartObject:angular.copy(portalService.chartObject)
+
+            }
         ];
 
         $scope.data.chartType = 'column';

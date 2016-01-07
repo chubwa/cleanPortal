@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'Clients who received VIA screening',
                 description:'Maelezo ya Clients who received VIA screening',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'jbZa8J1H2ET',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'Clients with Positive VIA results',
                 description:'Maelezo ya Clients with Positive VIA results',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'TMXGiqmTZ3M',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'Clients with VIA positive results treated with cryotherapy on the same day',
                 description:'Clients with VIA positive results treated with cryotherapy on the same day',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'BQLLzTvEHBL',
                 icons:angular.copy(portalService.icons),
@@ -64,6 +70,8 @@ angular.module("hmisPortal")
             {
                 title:'Total number of VIA+ clients receiving cryotherapy',
                 description:'Total number of VIA+ clients receiving cryotherapy',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'UCKrT4buBRQ',
                 icons:angular.copy(portalService.icons),
@@ -76,6 +84,8 @@ angular.module("hmisPortal")
             {
                 title:'Women with positive VIA results referred for suspect with cancer',
                 description:'Women with positive VIA results referred for suspect with cancer',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'fHEmmGUV9Wc',
                 icons:angular.copy(portalService.icons),
@@ -87,6 +97,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliopewa Huduma ya Cryotherapy',
                 description:'Waliopewa Huduma ya Cryotherapy',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'bZCT8NgyVw0',
                 icons:angular.copy(portalService.icons),
@@ -98,6 +110,8 @@ angular.module("hmisPortal")
             {
                 title:'Number of clients with LEEP treatment performed',
                 description:'Number of clients with LEEP treatment performed',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'ulM6a7dZoXM',
                 icons:angular.copy(portalService.icons),
@@ -109,6 +123,8 @@ angular.module("hmisPortal")
             {
                 title:'Number of post-treatment complications (cryotherapy or LEEP)',
                 description:'Number of post-treatment complications (cryotherapy or LEEP)',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'MkNGtEtobp1',
                 icons:angular.copy(portalService.icons),
@@ -120,6 +136,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliodhaniwa Kuwa na Saratani ya Shingo ya Mfuko wa Kizazi wakati wa FP',
                 description:'Waliodhaniwa Kuwa na Saratani ya Shingo ya Mfuko wa Kizazi wakati wa FP',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'IZgTEU5SD0H',
                 icons:angular.copy(portalService.icons),

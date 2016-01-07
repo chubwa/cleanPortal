@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliojifungua Kabla ya Kufika Kituoni (BBA)',
                 description:'Maelezo ya Waliojifungua Kabla ya Kufika Kituoni (BBA)',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'awbB2k6c4dy',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliojifungulia Nyumbani',
                 description:'Maelezo ya Waliojifungulia Nyumbani',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'nGed5u8o6gv',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliojifungulia kituoni',
                 description:'Maelezo ya Waliojifungulia kituoni',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'kLI4iGDbN3p',
                 icons:angular.copy(portalService.icons),
@@ -64,6 +70,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliozalishwa na Wakunga wa Jadi (TBA)',
                 description:'Waliozalishwa na Wakunga wa Jadi (TBA)',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'DUlS90FQGNh',
                 icons:angular.copy(portalService.icons),
@@ -76,6 +84,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliojifungua kwa Vacuum',
                 description:'Waliojifungua kwa Vacuum',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'totaZnTeUuK',
                 icons:angular.copy(portalService.icons),
@@ -87,6 +97,8 @@ angular.module("hmisPortal")
             {
                 title:'Caesarian Section',
                 description:'Caesarian Section',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'snAJ4ADu50F',
                 icons:angular.copy(portalService.icons),
@@ -98,6 +110,8 @@ angular.module("hmisPortal")
             {
                 title:'Breech Delivery',
                 description:'Breech Delivery',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'EdaxsmnoohA',
                 icons:angular.copy(portalService.icons),

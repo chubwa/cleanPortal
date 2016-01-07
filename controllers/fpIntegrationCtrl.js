@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata njia nyingine za uzazi wa mpango siku 42 baada ya kujifungua',
                 description:'Maelezo ya Waliopata njia nyingine za uzazi wa mpango siku 42 baada ya kujifungua',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'Ja1qSTrq7jq',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'Huduma ya Implanon baada ya mimba kuharibika',
                 description:'Maelezo ya Huduma ya Implanon baada ya mimba kuharibika',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'SLXW8CxxrbX',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Huduma ya FP Baada ya Mimba Kuharibika',
                 description:'Maelezo ya Waliopata Huduma ya FP Baada ya Mimba Kuharibika',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'f096Uub9EvE',
                 icons:angular.copy(portalService.icons),
@@ -64,6 +70,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Njia za Uzazi wa Mpango Siku 42 Baada ya Kujifungua',
                 description:'Waliopata Njia za Uzazi wa Mpango Siku 42 Baada ya Kujifungua',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'twBzX6Uja4u',
                 icons:angular.copy(portalService.icons),
@@ -76,6 +84,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Njia za Uzazi wa Mpango Baada ya Mimba Kuharibika',
                 description:'Waliopata Njia za Uzazi wa Mpango Baada ya Mimba Kuharibika',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'udebdxs4kt0',
                 icons:angular.copy(portalService.icons),
@@ -87,6 +97,8 @@ angular.module("hmisPortal")
             {
                 title:'Waliopata Implanon siku 42 baada ya kujifungua',
                 description:'Waliopata Implanon siku 42 baada ya kujifungua',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'vA9jzpigmK3',
                 icons:angular.copy(portalService.icons),
@@ -98,6 +110,8 @@ angular.module("hmisPortal")
             {
                 title:'Huduma nyingine za uzazi wa mpango baada ya mimba kuharibika',
                 description:'Huduma nyingine za uzazi wa mpango baada ya mimba kuharibika',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'wCLnMe5fRFu',
                 icons:angular.copy(portalService.icons),

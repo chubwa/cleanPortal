@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Partners Syphilis +VE prevalance',
                 description:'Maelezo ya ANC Partners Syphilis +VE prevalance',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'BqowH5E3ytQ',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Malaria testing rate',
                 description:'Maelezo ya ANC Malaria testing rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'FaooqUblXag',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Anaemia Prevalance',
                 description:'Maelezo ya ANC Anaemia Prevalance',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'JT9AlIbDl1H',
                 icons:angular.copy(portalService.icons),
@@ -64,6 +70,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Coverage for Women of Under 20 years',
                 description:'ANC Coverage for Women of Under 20 years',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'JeIe5FgaGTX',
                 icons:angular.copy(portalService.icons),
@@ -76,6 +84,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC 4th visits Coverage',
                 description:'ANC 4th visits Coverage',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'QiA9L6tNHFy',
                 icons:angular.copy(portalService.icons),
@@ -87,6 +97,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Partners Syphilis testing rate',
                 description:'ANC Partners Syphilis testing rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'Wqdkddpf9fB',
                 icons:angular.copy(portalService.icons),
@@ -98,6 +110,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC IPT 2 coverage',
                 description:'ANC IPT 2 coverage',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'i47jm4Pkkq6',
                 icons:angular.copy(portalService.icons),
@@ -109,6 +123,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Iron supplementation rate',
                 description:'ANC Iron supplementation rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'iGbAQJ0V68E',
                 icons:angular.copy(portalService.icons),
@@ -120,6 +136,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Partner Syphilis treatment rate',
                 description:'ANC Partner Syphilis treatment rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'mb7EIJYVFWg',
                 icons:angular.copy(portalService.icons),
@@ -130,7 +148,9 @@ angular.module("hmisPortal")
             },
             {
                 title:'ANC 1st visit coverage"',
-                description:'ANC 1st visit coverage"',
+                description:'ANC 1st visit coverage',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'oazOp512ShT',
                 icons:angular.copy(portalService.icons),
@@ -142,6 +162,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Partner Syphilis treatment rate',
                 description:'ANC Partner Syphilis treatment rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'ovRcOHNO7qZ',
                 icons:angular.copy(portalService.icons),
@@ -153,6 +175,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Malaria prevalence',
                 description:'ANC Malaria prevalence',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'vfaY7k6TINl',
                 icons:angular.copy(portalService.icons),

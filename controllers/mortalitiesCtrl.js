@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'NEONATAL MORTALITY RATE',
                 description:'Maelezo ya NEONATAL MORTALITY RATE',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'BlZrj2FC6bG',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'INFANT MORTALITY RATE',
                 description:'Maelezo ya INFANT MORTALITY RATE',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'Y1pkrlq2hWi',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'Under five Growth Monitoring',
                 description:'Maelezo ya Under five Growth Monitoring',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'uC2YOL3qc6g',
                 icons:angular.copy(portalService.icons),
@@ -64,6 +70,8 @@ angular.module("hmisPortal")
             {
                 title:'Maternal Mortality Ratio',
                 description:'Maternal Mortality Ratio',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'bzTuXoKa87E',
                 icons:angular.copy(portalService.icons),

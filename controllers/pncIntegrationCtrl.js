@@ -28,6 +28,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC IPT2 COVERAGE',
                 description:'Maelezo ya ANC IPT2 COVERAGE',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col s12 m6",
                 data:'i47jm4Pkkq6',
                 icons:angular.copy(portalService.icons),
@@ -39,6 +41,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC MALARIA PREVELANCE',
                 description:'Maelezo ya ANC MALARIA PREVELANCE',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'vfaY7k6TINl',
@@ -52,6 +56,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Proportion  of pregnant women receiving ITN Voucher',
                 description:'Maelezo ya ANC Proportion  of pregnant women receiving ITN Voucher',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'tit1C1VPIV7',
                 icons:angular.copy(portalService.icons),
@@ -64,6 +70,8 @@ angular.module("hmisPortal")
             {
                 title:'Proportional of Malaria cases in OPD',
                 description:'Proportional of Malaria cases in OPD',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'xrYmEc4LCCo',
                 icons:angular.copy(portalService.icons),
@@ -76,6 +84,8 @@ angular.module("hmisPortal")
             {
                 title:'Proportional of Malaria cases in IPD',
                 description:'Proportional of Malaria cases in OPD',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'CaPhxP3hIHD',
                 icons:angular.copy(portalService.icons),

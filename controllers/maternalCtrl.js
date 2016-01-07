@@ -28,6 +28,8 @@ angular.module("hmisPortal")
         $scope.cards.malaria = [{
             title:'Antenatal Care Coverage',
             description:'Antenatal Care Coverage',
+            numerator:portalService.numerator,
+            denominator:portalService.denominator,
             cardClass:"col s12 m6",
             data:'XjbKrjgOFMp',
             icons:angular.copy(portalService.icons),
@@ -40,6 +42,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC 4th Visit Coverage',
                 description:'ANC 4th Visit Coverage',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 cardSize:"medium",
                 data:'QiA9L6tNHFy',
@@ -53,6 +57,8 @@ angular.module("hmisPortal")
             {
                 title:' ANC 1st Visit before 12 weeks rate',
                 description:' ANC 1st Visit before 12 weeks rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'TRoamv0YPt3',
                 icons:angular.copy(portalService.icons),
@@ -65,6 +71,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC De- worming rate',
                 description:'ANC De- worming rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'ovRcOHNO7qZ',
                 icons:angular.copy(portalService.icons),
@@ -77,6 +85,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Syphilis prevelance',
                 description:'ANC Syphilis prevelance',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'aEcdPpCOi3k',
                 icons:angular.copy(portalService.icons),
@@ -89,6 +99,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC Coverage for women under 20 years',
                 description:'ANC Coverage for women under 20 years',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m12 s12",
                 data:'JeIe5FgaGTX',
                 icons:angular.copy(portalService.icons),
@@ -101,6 +113,8 @@ angular.module("hmisPortal")
             {
                 title:'ANC HIV Prevelance ( 15 - 24)',
                 description:'ANC HIV Prevelance ( 15 - 24)',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'TdxVgoa08tn',
                 icons:angular.copy(portalService.icons),
@@ -113,6 +127,8 @@ angular.module("hmisPortal")
             {
                 title:'Health Facility Delivery Rate',
                 description:'Health Facility Delivery Rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'OLWz8aiTGYd',
                 icons:angular.copy(portalService.icons),
@@ -125,6 +141,8 @@ angular.module("hmisPortal")
             {
                 title:'Contraceptive  prevalence rate',
                 description:'Contraceptive  prevalence rate',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'lcOiUC6RdPw',
                 icons:angular.copy(portalService.icons),
@@ -137,6 +155,8 @@ angular.module("hmisPortal")
             {
                 title:'Deliveries by skilled attendants',
                 description:'Deliveries by skilled attendants',
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
                 cardClass:"col m6 s12",
                 data:'vVRVLjgU10c',
                 icons:angular.copy(portalService.icons),
