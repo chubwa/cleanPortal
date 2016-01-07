@@ -10,6 +10,8 @@ angular.module("hmisPortal")
         this.period = '';
         this.orgUnitId = '';
         this.orgUnitName = '';
+        this.numerator='';
+        this.denominator='';
         this.base = "http://139.162.204.124/dhis/";
         this.icons = [
             {name: 'table', image: 'table.jpg', action: ''},
@@ -135,7 +137,18 @@ angular.module("hmisPortal")
                 }
                 cardObject.chartObject.loading = true;
                 $http.get(url).success(function (data) {
-
+                    var indicatorApi=
+                        $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
+                        var indicatorResult=indicatorApi.get(function(indicatorObject){
+                            var expApi=
+                            $resource('http://139.162.204.124/dhis/api/expressions/description',{get:{method:"JSONP"}});
+                             var numeratorExp=expApi.get({expression:indicatorObject.numerator},function(numeratorText){
+                               cardObject.numerator=numeratorText.description;
+                             });
+                             var denominator=expApi.get({expression:indicatorObject.denominator},function(denominatorText){
+                                 cardObject.denominator=denominatorText.description;
+                             });
+                        });
                     var area = [];
                     cardObject.chartObject.xAxis.categories = [];
                     //
