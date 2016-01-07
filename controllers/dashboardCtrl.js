@@ -89,9 +89,9 @@ angular.module("hmisPortal")
             },function(){
                 var url = "";
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;p1b4SYcdjJw;h8JRv8POdfy&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&outputIdScheme=NAME";
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&outputIdScheme=NAME";
                 }else{
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;p1b4SYcdjJw;h8JRv8POdfy&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&outputIdScheme=NAME";
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&outputIdScheme=NAME";
                 }
                 $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
                     var a = document.createElement('a');
@@ -139,9 +139,9 @@ angular.module("hmisPortal")
                 $scope.area = [];
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
 
-                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=Cow9nZikDgD:FfN1mqXvpR7;HKU7NijIEIH;LBipXEMD6mq;aZcKJ9XxvaF;h8JRv8POdfy;p1b4SYcdjJw&dimension=dx:ykShMtNgDB1&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=dx:ykShMtNgDB1&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }else{
-                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=Cow9nZikDgD:FfN1mqXvpR7;HKU7NijIEIH;LBipXEMD6mq;aZcKJ9XxvaF;h8JRv8POdfy;p1b4SYcdjJw&dimension=dx:ykShMtNgDB1&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=dx:ykShMtNgDB1&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }
 
                 $http.get($scope.url).success(function(data){

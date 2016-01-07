@@ -70,7 +70,7 @@ angular.module("hmisPortal")
 
         $routeProvider.when("/tb",{
             templateUrl: 'views/tb.html',
-            controller: 'mainCtrl'
+            controller: 'tbCtrl'
         });
 
         $routeProvider.when("/updates",{
