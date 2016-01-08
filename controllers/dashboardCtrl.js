@@ -266,7 +266,7 @@ angular.module("hmisPortal")
                 console.log(v[0]);
                 console.log("=======");
                 console.log(de);
-                if(v[2] == ou && v[0] == de ){
+                if(v[2] == ou && v[1] == de ){
                     num = parseInt(v[3])
                 }
             });
