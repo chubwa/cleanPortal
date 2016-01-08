@@ -262,15 +262,10 @@ angular.module("hmisPortal")
         $scope.getDataFromUrl  = function (arr,ou,de){
             var num = 0;
             $.each(arr,function(k,v){
-
-                console.log(v[0]);
-                console.log("=======");
-                console.log(de);
                 if(v[2] == ou && v[1] == de ){
                     num = parseInt(v[3])
                 }
             });
-            console.log(num);
             return num;
         }
         ////////////////////////////////////////////////////////////////////
