@@ -140,9 +140,6 @@ angular.module("hmisPortal")
                 cardObject.chartObject.loading = true;
                 $http.get(url).success(function (data) {
                        cardObject.header=data.metaData.names[cardObject.data];
-                       console.log(cardObject.header);
-                       console.log("+++++++++");
-                       console.log(cardObject.data);
                     var indicatorApi=
                         $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
                         var indicatorResult=indicatorApi.get(function(indicatorObject){
