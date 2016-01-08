@@ -29,8 +29,8 @@ angular.module("hmisPortal")
 
         $scope.cards.malaria = [
             {
-                title:'Leprosy Notification Rate',
-                description:'Maelezo ya Leprosy Notification Rate',
+                title:portalService.header,
+                description:'Maelezo ya '+portalService.header,
                 indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
@@ -43,8 +43,8 @@ angular.module("hmisPortal")
                 chartObject:angular.copy(portalService.chartObject)
             },
             {
-                title:'MB Leprosy Success Rate',
-                description:'Maelezo ya MB Leprosy Success Rate',
+                title:portalService.header,
+                description:'Maelezo ya '+portalService.header,
                 indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
                 denominator:portalService.denominator,
