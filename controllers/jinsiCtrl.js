@@ -76,10 +76,10 @@ angular.module("hmisPortal")
                 var url = "";
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
 
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=hENn80Fmmlf:mtUMlCLFTTz;syxWmui9UMq&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;Cow9nZikDgD&rows=ou";
                 }else{
 
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=hENn80Fmmlf:mtUMlCLFTTz;syxWmui9UMq&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;hENn80Fmmlf&rows=ou";
+                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx;Cow9nZikDgD&rows=ou";
                 }
                 $http.get(url,{withCredentials: true, params : {
                     j_username: "portal",
@@ -103,9 +103,9 @@ angular.module("hmisPortal")
                 $scope.jinsichartConfig.title.text = "POPULATION BY GENDER";
                 $scope.area = [];
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:ykShMtNgDB1&dimension=hENn80Fmmlf:mtUMlCLFTTz;syxWmui9UMq&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=ou:LEVEL-2;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }else{
-                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:ykShMtNgDB1&dimension=hENn80Fmmlf:mtUMlCLFTTz;syxWmui9UMq&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:ykShMtNgDB1&dimension=Cow9nZikDgD:LBipXEMD6mq;FfN1mqXvpR7;aZcKJ9XxvaF;HKU7NijIEIH;h8JRv8POdfy&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }
 
                 $http.get($scope.url).success(function(data){
