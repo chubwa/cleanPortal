@@ -29,6 +29,133 @@ angular.module("hmisPortal")
 
         $scope.cards.malaria = [
             {
+                title:'TB Notification Rate',
+                description:'TB Notification Rate',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'xywPYBGDsS6',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'Proportion of children < 15  years diagnozed with TB',
+                description:'Proportion of children < 15  years diagnozed with TB',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'ELPxKQDTgK2',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'MDR TB notified cases',
+                description:'MDR TB notified cases',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m12 s12",
+                data:'qdXiY9RSR56',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'combined',
+                chartObject:angular.copy(portalService.chartObject)
+
+            },
+            {
+                title:'TB Treatment Success Rate',
+                description:'TB Treatment Success Rate',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'IpgVkyzQ7k3',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'Percentage of TB cases with Known HIV Status',
+                description:'Percentage of TB cases with Known HIV Status',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'vzrKvd50poy',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'Percentage of TB patients with documented HIV ve+ status',
+                description:'Percentage of TB patients with documented HIV ve+ status',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'WQjdDOZzsR1',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'Percentage of TB patients registered for HIV care',
+                description:'Percentage of TB patients registered for HIV care',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'HWTJx1tWZRh',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'Percentage of TB patients initiated ART',
+                description:'Percentage of TB Cases initiated ART',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'mQtop3xku9h',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
+                title:'Percentage of TB patients put on CPT',
+                description:'Percentage of TB patients put on CPT',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'acT7x7XHryb',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+            {
                 title:'Leprosy Notification Rate',
                 description:'Maelezo ya Leprosy Notification Rate',
                 indicatorType:portalService.indicatorType,
@@ -43,7 +170,23 @@ angular.module("hmisPortal")
                 chartObject:angular.copy(portalService.chartObject)
             },
             {
-                title:'MB Leprosy Success Rate',
+                title:'Proportion of children < 15  years diagnozed with Leprosy',
+                description:'Proportion of children < 15  years diagnozed with Leprosy',
+                indicatorType:portalService.indicatorType,
+                numerator:portalService.numerator,
+                denominator:portalService.denominator,
+                cardClass:"col m6 s12",
+                data:'AnvTxls2pzS',
+                icons:angular.copy(portalService.icons),
+                displayTable:false,
+                displayMap:false,
+                chart:'bar',
+                chartObject:angular.copy(portalService.chartObject)
+            },
+
+
+            {
+                title:'MB Leprosy treatment Success Rate',
                 description:'Maelezo ya MB Leprosy Success Rate',
                 indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
@@ -58,23 +201,9 @@ angular.module("hmisPortal")
                 chartObject:angular.copy(portalService.chartObject)
 
             },
-            {
-                title:'MDR TB cases',
-                description:'MDR TB cases',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m12 s12",
-                data:'qdXiY9RSR56',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'combined',
-                chartObject:angular.copy(portalService.chartObject)
 
-            },
             {
-                title:'PB Leprosy Success Rate',
+                title:'PB Leprosy treatment Success Rate',
                 description:'PB Leprosy Success Rate',
                 indicatorType:portalService.indicatorType,
                 numerator:portalService.numerator,
@@ -87,124 +216,6 @@ angular.module("hmisPortal")
                 chart:'bar',
                 chartObject:angular.copy(portalService.chartObject)
 
-            },
-            {
-                title:'Percentage of TB Cases initiated ART',
-                description:'Percentage of TB Cases initiated ART',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'mQtop3xku9h',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'Percentage of TB Cases initiated CPT',
-                description:'Percentage of TB Cases initiated CPT',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'acT7x7XHryb',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'Percentage of TB cases registered for HIV care',
-                description:'Percentage of TB cases registered for HIV care',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'HWTJx1tWZRh',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'Percentage of TB cases with HIV ve+',
-                description:'Percentage of TB cases with HIV ve+',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'WQjdDOZzsR1',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'Percentage of TB cases with Known HIV Status',
-                description:'Percentage of TB cases with Known HIV Status',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'vzrKvd50poy',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'Proportion of New Leprosy cases < 15  years',
-                description:'Proportion of New Leprosy cases < 15  years',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'ELPxKQDTgK2',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'Proportion of TB cases < 15  years',
-                description:'Proportion of TB cases < 15  years',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'AnvTxls2pzS',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'TB Notification Rate',
-                description:'TB Notification Rate',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'xywPYBGDsS6',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
-            },{
-                title:'TB Treatment Success Rate',
-                description:'TB Treatment Success Rate',
-                indicatorType:portalService.indicatorType,
-                numerator:portalService.numerator,
-                denominator:portalService.denominator,
-                cardClass:"col m6 s12",
-                data:'IpgVkyzQ7k3',
-                icons:angular.copy(portalService.icons),
-                displayTable:false,
-                displayMap:false,
-                chart:'bar',
-                chartObject:angular.copy(portalService.chartObject)
             }
         ]
 

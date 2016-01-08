@@ -6,7 +6,7 @@ angular.module("hmisPortal")
     .run(function() {
 
     })
-    .controller("mainCtrl",function ($rootScope,$scope,$q,$http) {
+    .controller("mainCtrl",function ($rootScope,$scope,$q,$http,$timeout) {
 
         $rootScope.showLoader = false;
         $rootScope.currentDownloading = false;
