@@ -260,9 +260,10 @@ angular.module("hmisPortal")
             series: []
         };
         $scope.getDataFromUrl  = function (arr,ou,de){
-            var num = 0
+            var num = 0;
             $.each(arr,function(k,v){
                 if(v[2] == ou && v[0] == de ){
+                    console.log("OK");
                     num = parseInt(v[3])
                 }
             });

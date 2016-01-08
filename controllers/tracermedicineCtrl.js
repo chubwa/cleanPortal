@@ -850,13 +850,868 @@ angular.module("hmisPortal")
             },
 
             {
-                title:'Mean Private Facility Tracers available By Quarter',
-                description:'Mean Private Facility Tracers available By Quarter',
+                title:'MRDT Availability',
+                description:'Mean Private MRDT Availability',
                 indicatorType:'',
                 numerator:" ",
                 denominator:" ",
                 cardClass:"col m6 s12",
-                data:'TJKlz62awvr',
+                data:'jr3NGLBd0um',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Magnesium Sulphate',
+                description:'Magnesium Sulphate',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'gKuUBZzrHKn',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Zinc Sulphate',
+                description:'Zinc Sulphate',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'nHkxJhedt45',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Benzyl Pencilline Injection',
+                description:'Benzyl Pencilline Injection',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'JMh8rqmUHFT',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Ferrous + Folic Acid Tablets',
+                description:'Ferrous + Folic Acid Tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'x0yG6AUAqE0',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Metronidazole Tablets',
+                description:'Metronidazole Tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'VB95k7UUf5d',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Catgut Sutures',
+                description:'Catgut Sutures',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'aoT6ct7Vfel',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Tenofovir 300mg+Lamivudine 300mg+Efavirenz 600mg Tablets',
+                description:'Tenofovir 300mg+Lamivudine 300mg+Efavirenz 600mg Tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'CjNOYsGfIlO',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Zidovudine 60mg+Lamivudine 30mg+Nevirapine 50mg Tablets',
+                description:'Zidovudine 60mg+Lamivudine 30mg+Nevirapine 50mg Tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'oB0IISPgAz4',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'UNIGOLD HIV 1/2',
+                description:'UNIGOLD HIV 1/2',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'LZHwfqERPiC',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Determine HIV 1&2',
+                description:'Determine HIV 1&2',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'UpQjua0Othb',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'FACS Count reagent',
+                description:'FACS Count reagent',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'SiUdy5FzDSP',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'DBS',
+                description:'DBS',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'J5hVzb8Mhwi',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'RHZE Rifampicin 150mg/Isoniazide 75mg/Pyrazinamide/Etdambutol Tablets',
+                description:'RHZE Rifampicin 150mg/Isoniazide 75mg/Pyrazinamide/Etdambutol Tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'F08pnezPe17',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'RH Rifampicin 150MG/Isoniazide 75mg Tablets',
+                description:'RH Rifampicin 150MG/Isoniazide 75mg Tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'amI2RHuAaE5',
+                icons:[
+                    {name:'table',image:'table.jpg',action:''},
+                    {name:'bar',image:'bar.png',action:''},
+                    {name:'line',image:'line.png',action:''},
+                    {name:'combined',image:'combined.jpg',action:''},
+                    {name:'column',image:'column.png',action:''},
+                    {name:'area',image:'area.jpg',action:''},
+                    {name:'pie',image:'pie.png',action:''},
+                    {name:'map',image:'map.jpg',action:''}
+                ],
+                dataSource:'',
+                size:'small',
+                displayTable:false,
+                displayMap:false,
+                chart:'pie',
+                chartObject:{
+                    title: {
+                        text: 'Combination chart'
+                    },
+                    xAxis: {
+                        categories: [],
+                        labels:{
+                            rotation: -90,
+                            style:{ "color": "#000000", "fontWeight": "normal" }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },labels:{
+                            style:{ "color": "#000000", "fontWeight": "bold" }
+                        }
+                    },
+                    labels: {
+                        items: [{
+                            html: 'doses',
+                            style: {
+                                left: '50px',
+                                top: '18px',
+                                color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                            }
+                        }]
+                    },
+                    series: []
+                }
+
+            },
+
+            {
+                title:'Sulphadoxine+pyrimetdamine tablets',
+                description:'Sulphadoxine+pyrimetdamine tablets',
+                indicatorType:'',
+                numerator:" ",
+                denominator:" ",
+                cardClass:"col m6 s12",
+                data:'Si3s2HTVelD',
                 icons:[
                     {name:'table',image:'table.jpg',action:''},
                     {name:'bar',image:'bar.png',action:''},
