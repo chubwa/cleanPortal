@@ -871,10 +871,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'bar',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'bar chart'
                     },
                     xAxis: {
                         categories: [],
@@ -928,10 +928,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'bar',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'bar chart'
                     },
                     xAxis: {
                         categories: [],
@@ -985,10 +985,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'column',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'column chart'
                     },
                     xAxis: {
                         categories: [],
@@ -1042,10 +1042,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'table',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'table'
                     },
                     xAxis: {
                         categories: [],
@@ -1099,10 +1099,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'bar',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'bar chart'
                     },
                     xAxis: {
                         categories: [],
@@ -1156,7 +1156,7 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'combined',
                 chartObject:{
                     title: {
                         text: 'Combination chart'
@@ -1213,10 +1213,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'line',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'line chart'
                     },
                     xAxis: {
                         categories: [],
@@ -1270,10 +1270,10 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'bar',
                 chartObject:{
                     title: {
-                        text: 'Combination chart'
+                        text: 'bar chart'
                     },
                     xAxis: {
                         categories: [],
@@ -1327,7 +1327,7 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'table',
                 chartObject:{
                     title: {
                         text: 'Combination chart'
@@ -1441,7 +1441,7 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'line',
                 chartObject:{
                     title: {
                         text: 'Combination chart'
@@ -1555,7 +1555,7 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'column',
                 chartObject:{
                     title: {
                         text: 'Combination chart'
@@ -1612,7 +1612,7 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'area',
                 chartObject:{
                     title: {
                         text: 'Combination chart'
@@ -1669,7 +1669,7 @@ angular.module("hmisPortal")
                 size:'small',
                 displayTable:false,
                 displayMap:false,
-                chart:'pie',
+                chart:'combined',
                 chartObject:{
                     title: {
                         text: 'Combination chart'
