@@ -10,14 +10,14 @@ angular.module("hmisPortal")
     .controller("planningCtrl",function ($rootScope,$scope,$http,$location,$timeout,olData,olHelpers,shared) {
         $scope.lastCard = function () {
             $scope.loadingImage=true;
-            var base = "http://139.162.204.124/dhis/";
+            var base = "https://hmisportal.moh.go.tz/dhis/";
             $.post(base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             }, function () {
                 if ($scope.selectedOrgUnit == "m0frOspS7JY") {
-                    $scope.url="http://139.162.204.124/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-2;"+ $scope.selectedOrgUnit +"&filter=pe:" + $scope.selectedPeriod + "&displayProperty=NAME";
+                    $scope.url="https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-2;"+ $scope.selectedOrgUnit +"&filter=pe:" + $scope.selectedPeriod + "&displayProperty=NAME";
                 } else {
-                    $scope.url="http://139.162.204.124/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-3;"+ $scope.selectedOrgUnit +"&filter=pe:" + $scope.selectedPeriod + "&displayProperty=NAME";
+                    $scope.url="https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-3;"+ $scope.selectedOrgUnit +"&filter=pe:" + $scope.selectedPeriod + "&displayProperty=NAME";
                 }
 
                 $http.get($scope.url).success(function (metaData) {
@@ -56,16 +56,16 @@ angular.module("hmisPortal")
             })
         }
         $scope.downloadExcelTotal = function(){
-            var base = "http://139.162.204.124/dhis/";
+            var base = "https://hmisportal.moh.go.tz/dhis/";
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    var lastUrl="http://139.162.204.124/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou";
-                    //var lastUrl="http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:i47jm4Pkkq6;vfaY7k6TINl;tit1C1VPIV7;aw1jQ1tJTmE&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou";
+                    //var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:i47jm4Pkkq6;vfaY7k6TINl;tit1C1VPIV7;aw1jQ1tJTmE&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }else{
-                    var lastUrl="http://139.162.204.124/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou"
-                    //var lastUrl="http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:i47jm4Pkkq6;vfaY7k6TINl;tit1C1VPIV7;aw1jQ1tJTmE&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:tNQvNURFbOA;oAdnR7jRTSN;btKkJROB2gP;Aufg85b0HV3;E6H1ofZdLcL;c5T3R6QjgQG;OQpasUg1Tse;pqpVKzE951Y;MW8C96hZ5nQ;v05hOYtwSs3;GGpsoh0DX6T;mlfh4fgiFhd;GQ3JD2MeTIp;KLiLjLEQDrh;IZgTEU5SD0H;sTuAOvNzZVG;A4MRLy7M3DB;f096Uub9EvE;udebdxs4kt0;twBzX6Uja4u;bZCT8NgyVw0;Ek7VMzwW1jp;qEWJizgHHot;aMN0UOjdXnO;SuFTWRyy3q0;mh5Y8qINbqT;zzKyPYGLeP7;IhLMQ2V6wqu;GWFza9xVa3F;IFxhP0O4k0W;epPM7fO8CnH;PHN05p61ByJ;yAPwF74EoEe;TWRJN2QjrqP;duYu8OhlYLu;bdq4tW5fxur;gfDQ0CooRX8&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou"
+                    //var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:i47jm4Pkkq6;vfaY7k6TINl;tit1C1VPIV7;aw1jQ1tJTmE&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }
                 $http.get(lastUrl,{'Content-Type': 'application/octet-stream'}).success(function(data){
                     var a = document.createElement('a');

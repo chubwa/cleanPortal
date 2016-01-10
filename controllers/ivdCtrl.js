@@ -275,16 +275,16 @@ angular.module("hmisPortal")
         };
 
         $scope.downloadExcel = function(id){
-            var base = "http://139.162.204.124/dhis/";
+            var base = "https://hmisportal.moh.go.tz/dhis/";
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
                 var url = "";
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+$scope.selectedPeriod+"&dimension=ou:LEVEL-1;LEVEL-2;"+$scope.selectedOrgUnit+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                    url = "https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+$scope.selectedPeriod+"&dimension=ou:LEVEL-1;LEVEL-2;"+$scope.selectedOrgUnit+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }else{
 
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+$scope.selectedPeriod+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                    url = "https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:"+id+"&dimension=pe:"+$scope.selectedPeriod+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }
                 $http.get(url,{ 'Content-Type': 'application/csv;charset=UTF-8'}).success(function(data){
                     var a = document.createElement('a');
@@ -298,7 +298,7 @@ angular.module("hmisPortal")
 
         $scope.prepareSeries = function(cardObject,chart){
             cardObject.chartObject.loading = true;
-            var base = "http://139.162.204.124/dhis/";
+            var base = "https://hmisportal.moh.go.tz/dhis/";
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
@@ -317,18 +317,18 @@ angular.module("hmisPortal")
                 cardObject.chartObject.yAxis.title.text = cardObject.title.toLowerCase();
 
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-1;LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    $scope.url = "https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-1;LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }else{
-                    $scope.url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    $scope.url = "https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }
 
                 $http.get($scope.url).success(function(data){
                     var indicatorApi=
-                        $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
+                        $resource("https://hmisportal.moh.go.tz/dhis/api/indicators/"+cardObject.data+".json");
                     var indicatorResult=indicatorApi.get(function(indicatorObject) {
                         cardObject.indicatorType = indicatorObject.indicatorType.name;
                         var expApi =
-                            $resource('http://139.162.204.124/dhis/api/expressions/description', {get: {method: "JSONP"}});
+                            $resource('https://hmisportal.moh.go.tz/dhis/api/expressions/description', {get: {method: "JSONP"}});
                         var numeratorExp = expApi.get({expression: indicatorObject.numerator}, function (numeratorText) {
                             cardObject.numerator = numeratorText.description;
                         });
@@ -405,14 +405,14 @@ angular.module("hmisPortal")
         };
         $scope.lastCard=function(){
             $scope.loadingImage=true;
-            var base = "http://139.162.204.124/dhis/";
+            var base = "https://hmisportal.moh.go.tz/dhis/";
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    var lastUrl="http://139.162.204.124/dhis/api/analytics.json?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }else{
-                    var lastUrl="http://139.162.204.124/dhis/api/analytics.json?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
+                    var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME";
                 }
                 $http.get(lastUrl).success(function(dataTable){
                     var generalArray=[];
@@ -450,14 +450,14 @@ angular.module("hmisPortal")
 
         }
         $scope.downloadIvdExcelTotal = function(){
-            var base = "http://139.162.204.124/dhis/";
+            var base = "https://hmisportal.moh.go.tz/dhis/";
             $.post( base + "dhis-web-commons-security/login.action?authOnly=true", {
                 j_username: "portal", j_password: "Portal123"
             },function(){
                 if($scope.selectedOrgUnit == "m0frOspS7JY"){
-                    var lastUrl="http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou";
+                    var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-2;m0frOspS7JY&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou";
                 }else{
-                    var lastUrl="http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou";
+                    var lastUrl="https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:c29EE9nH8gQ;JXJ6K85BwHb;DHP2lGgo4kH;RyNkn76uTJo;WAdaCligbNP;ykDWUlQzexW;WhsP7nsuwnz;V2ZzQl7dgVF&dimension=ou:LEVEL-3;"+$scope.selectedOrgUnit+"&filter=pe:"+$scope.selectedPeriod+"&displayProperty=NAME&tableLayout=true&columns=dx&rows=ou";
                 }
                 $http.get(lastUrl,{'Content-Type': 'application/octet-stream'}).success(function(data){
                     var a = document.createElement('a');
@@ -489,7 +489,7 @@ angular.module("hmisPortal")
         $scope.drawMap = function(parentUid,level,card){
             $scope.shared = shared;
             shared.facility =3029;
-            var url = 'http://139.162.204.124/dhis/api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
+            var url = 'https://hmisportal.moh.go.tz/dhis/api/organisationUnits.geojson?parent='+parentUid+'&level='+level;
             $http.get(url,{withCredentials: true, params : {
                 j_username: "portal",
                 j_password: "Portal123"

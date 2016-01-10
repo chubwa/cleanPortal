@@ -14,7 +14,7 @@ angular.module("hmisPortal")
         this.denominator='';
         this.indicatorType='';
         this.header='';
-        this.base = "http://139.162.204.124/dhis/";
+        this.base = "https://hmisportal.moh.go.tz/dhis/";
         this.icons = [
             {name: 'table', image: 'table.jpg', action: ''},
             {name: 'bar', image: 'bar.png', action: ''},
@@ -94,9 +94,9 @@ angular.module("hmisPortal")
             self.authenticateDHIS().then(function () {
                 var url = "";
                 if (self.selectedOrgUnit == "m0frOspS7JY") {
-                    url = "https://139.162.204.124/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-1;LEVEL-2;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                    url = "https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-1;LEVEL-2;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 } else {
-                    url = "http://139.162.204.124/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-2;LEVEL-3;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
+                    url = "https://hmisportal.moh.go.tz/dhis/api/analytics.csv?dimension=dx:" + id + "&dimension=pe:" + self.period + "&dimension=ou:LEVEL-2;LEVEL-3;" + self.orgUnitId + "&displayProperty=NAME&tableLayout=true&columns=dx&rows=pe;ou";
                 }
                 $http.get(url,{'Content-Type': 'application/csv;charset=UTF-8'}).success(function (data) {
                     var a = document.createElement('a');
@@ -133,19 +133,19 @@ angular.module("hmisPortal")
                 var url = '';
 //                var url = '/analytics.json';
                 if (self.orgUnitId == "m0frOspS7JY") {
-                    url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-1;LEVEL-2;m0frOspS7JY&filter=pe:"+self.period+"&displayProperty=NAME";
+                    url = "https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-1;LEVEL-2;m0frOspS7JY&filter=pe:"+self.period+"&displayProperty=NAME";
                 } else {
-                    url = "http://139.162.204.124/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+self.orgUnitId+"&filter=pe:"+self.period+"&displayProperty=NAME";
+                    url = "https://hmisportal.moh.go.tz/dhis/api/analytics.json?dimension=dx:"+cardObject.data+"&dimension=ou:LEVEL-2;LEVEL-3;"+self.orgUnitId+"&filter=pe:"+self.period+"&displayProperty=NAME";
                 }
                 cardObject.chartObject.loading = true;
                 $http.get(url).success(function (data) {
                        cardObject.header=data.metaData.names[cardObject.data];
                     var indicatorApi=
-                        $resource("http://139.162.204.124/dhis/api/indicators/"+cardObject.data+".json");
+                        $resource("https://hmisportal.moh.go.tz/dhis/api/indicators/"+cardObject.data+".json");
                         var indicatorResult=indicatorApi.get(function(indicatorObject){
                             cardObject.indicatorType=indicatorObject.indicatorType.name;
                             var expApi=
-                            $resource('http://139.162.204.124/dhis/api/expressions/description',{get:{method:"JSONP"}});
+                            $resource('https://hmisportal.moh.go.tz/dhis/api/expressions/description',{get:{method:"JSONP"}});
                              var numeratorExp=expApi.get({expression:indicatorObject.numerator},function(numeratorText){
                                cardObject.numerator=numeratorText.description;
                              });
